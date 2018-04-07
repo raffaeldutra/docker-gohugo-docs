@@ -5,7 +5,7 @@
 - [Quem sou eu](quem-sou-eu)
 
 <a name="pre-requisitos">
-# Pré requisitos
+## Pré requisitos
 
 Isso vai depender de bastante coisa, porém vamos trabalhar de maneira genérica.
 
@@ -15,7 +15,7 @@ Se você já for usuário Linux nativo, pode realizar diretamente sem necessitar
 
 
 <a name="maneira-linux-simples-de-ser"></a>
-# A maneira Linux simples de ser
+## A maneira Linux simples de ser
 
 Baixe Docker com o comando mágico (funciona somente em Sistemas Operacionais). Windows, sorry :-)
 
