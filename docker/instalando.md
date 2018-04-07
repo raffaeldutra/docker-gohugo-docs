@@ -4,7 +4,7 @@
 - [Workshops](#workshops)
 - [Quem sou eu](quem-sou-eu)
 
-<a name="pre-requisitos">
+<a name="pre-requisitos"></a>
 ## Pré requisitos
 
 Isso vai depender de bastante coisa, porém vamos trabalhar de maneira genérica.
@@ -24,7 +24,7 @@ curl -fsSL https://get.docker.com/ | sh
 ```
 
 <a name="como-obter-docker"></a>
-# Como obter Docker para outros sistemas?
+## Como obter Docker para outros sistemas?
 
 - [Link para documentação oficial](https://docs.docker.com/install/)
     - [Instalando em Windows](https://docs.docker.com/docker-for-windows/install/)
