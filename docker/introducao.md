@@ -1,9 +1,3 @@
-# Conteúdo
-
-- [Por que usar Docker?](#por-que-usar-docker)
-- [Afinal, o que é Docker?](#afinal-o-que-e)
-
-<a name="por-que-usar-docker"></a>
 ## Por que usar Docker ?
 
 1. Isolamento
@@ -23,7 +17,6 @@ Usando Docker é muito fácil você ter diferentes tipos de ambientes, como test
 
 Aqui está um grande ponto do uso Docker. Temos hoje uma vasta quantidade de ferramentas para usarmos como CI (Continuous Integratation), como Jenkins, Bamboo, Travis e etc. Cada vez que seu código fonte é atualizado, essas ferramentas salvam uma nova imagem e podem ir para produção.
 
-<a name="afinal-o-que-e"></a>
 ## Afinal, o que é Docker?
 
 Em grande resumo, Docker é uma ferramenta que possibita a criação, deploy e leve gerenciamento de pacotes auto contidos que contêm tudo que é necessário para rodar uma aplicação, como códigos, bibliotecas, configurações de sistemas e dependências e é isso que chamamos de containers.

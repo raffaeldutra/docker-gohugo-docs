@@ -1,10 +1,3 @@
-# Conteúdo
-
-- [Pré requisitos](#pre-requisitos)
-- [Workshops](#workshops)
-- [Quem sou eu](quem-sou-eu)
-
-<a name="pre-requisitos"></a>
 ## Pré requisitos
 
 Isso vai depender de bastante coisa, porém vamos trabalhar de maneira genérica.
@@ -14,7 +7,6 @@ Tenha em mãos um VM, pode ser utilizando Virtualbox, VMware, tanto faz, apenas 
 Se você já for usuário Linux nativo, pode realizar diretamente sem necessitar de máquina virtual.
 
 
-<a name="maneira-linux-simples-de-ser"></a>
 ## A maneira Linux simples de ser
 
 Baixe Docker com o comando mágico (funciona somente em Sistemas Operacionais). Windows, sorry :-)
