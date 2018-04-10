@@ -70,7 +70,7 @@ O que iremos ver agora é:
 
 Tudo que iremos executar em um container, vem de uma imagem e essa imagem pode ser uma que você mesmo criou ou uma imagem oficial, como foi o nosso caso acima como o Alpine.
 
-Apenas por conhecimento, Alpine é uma distribuição Linux super pequena que neste exato momento em sua versão 3.7.0 tem uma iso de 130MB e o mesmo vale para sua imagem para container, acredite, são 4.5MB de tamanho.
+> Apenas por conhecimento, Alpine é uma distribuição Linux super pequena que neste exato momento em sua versão 3.7.0 tem uma iso de 130MB e o mesmo vale para sua imagem para container, acredite, são 4.5MB de tamanho.
 
 Execute o comando:
 
