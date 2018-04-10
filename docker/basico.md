@@ -57,16 +57,16 @@ O que acabamos de ver aqui é o nome do container no momento que você o executo
 
 Vamos explicar por partes o que o comando acima faz:
 
-* docker run = executa um container
-* alpine é o nome da imagem que estamos Utilizando
-* hostname é o comando que é executado dentro do container, por isso obtemos aquele conjunto de números e letras como resposta quando executamos o comando.
+* **docker run** executa um container
+* **alpine** é o nome da imagem que estamos Utilizando
+* **hostname** é o comando que é executado dentro do container, por isso obtemos aquele conjunto de números e letras como resposta quando executamos o comando.
 
 O que iremos ver agora é:
 
 * Executando o comando acima algumas vezes, o resultado mudou?
 
 
-## docker images - A origem da vida
+## Utilizando imagens
 
 Tudo que iremos executar em um container, vem de uma imagem e essa imagem pode ser uma que você mesmo criou ou uma imagem oficial, como foi o nosso caso acima como o Alpine.
 
@@ -122,9 +122,20 @@ docker rmi <imagem>
 docker search <imagem>
 ```
 
+* Como baixamos uma imagem?
+
+```
+docker pull nginx
+```
+
+e para baixarmos uma versão específica, como Ubuntu 18.04? Para isso passe após o : a versão que quer utilizar
+
+```
+docker pull ubuntu:18.04
+```
 
 
-## docker container - Manipulando containers
+## Manipulando containers
 
 O comando que executmos incialmente *docker run alpine hostname* é o mais básico possível para termos um container em "funcionamento". O "funcionamento" entre aspas é o que iremos discutir neste momento.
 
@@ -161,7 +172,7 @@ docker container
 ```
 
 
-## Vamos gerenciar um pouco os containers
+## Gerenciando os containers
 
 Para podermos utilizar os comandos de stop e start, por exemplo, precisamos ter um container que de fato esta parado ou rodando, certo? então agora vamos rodar um container um pouco mais "complexo".
 
