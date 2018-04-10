@@ -161,7 +161,7 @@ docker container
 ```
 
 
-## Vamos gerenciar um pouco de funcionamento
+## Vamos gerenciar um pouco os containers
 
 Para podermos utilizar os comandos de stop e start, por exemplo, precisamos ter um container que de fato esta parado ou rodando, certo? então agora vamos rodar um container um pouco mais "complexo".
 
