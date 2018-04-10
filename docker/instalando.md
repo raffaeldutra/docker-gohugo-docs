@@ -1,10 +1,13 @@
 ## Pré requisitos
 
-Isso vai depender de bastante coisa, porém vamos trabalhar de maneira genérica.
+Isso vai depender de bastante coisa, porém vamos trabalhar de maneira genérica, então segue a lista:
 
-Tenha em mãos um VM, pode ser utilizando Virtualbox, VMware, tanto faz, apenas tenha sua VM com acesso para internet.
+* Uma máquina virtual (VM): pode ser utilizando Virtualbox, VMware, tanto faz.
+  * VM com acesso para internet.
+  * VM com placa em modo bridge  
+* Se você já for usuário Linux nativo, pode realizar diretamente sem necessitar de máquina virtual.
 
-Se você já for usuário Linux nativo, pode realizar diretamente sem necessitar de máquina virtual.
+> Atenção: esta VM precisa ter uma interface em modo bridge para ter acesso aos containers que iremos estudar durante o workshop.
 
 
 ## A maneira Linux simples de ser
