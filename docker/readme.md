@@ -4,9 +4,7 @@
 - [Afinal, o que é?](introducao.md#introducao)
 - [Instalando](instalando.md)
 - [O básico](basico.md)
-- [Trabalhando com containers]
-- [Dockerfile]
-- [Buildando imagens]
-- [Utilizando novas imagens]
-- [Trabalhando com volumes]()
+- [Interagindo com containers](interagindo.md)
+- [Dockerfile](dockerfile.md)
+- [Trabalhando com volumes]
 - [Docker Compose]
