@@ -46,7 +46,7 @@ docker <comando> --help
 ```
 
 
-## docker run - Rodando um container
+## Rodando um container
 
 ```
 docker run alpine hostname
