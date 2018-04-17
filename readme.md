@@ -8,7 +8,7 @@
 
 - [Seja bem-vindo](#seja-bem-vindo)
 - [Workshops](#workshops)
-- [Quem sou eu](quem-sou-eu)
+- [Quem sou eu](quemsoueu.md)
 
 <a name="docker"></a>
 # Seja bem-vindo
@@ -17,7 +17,7 @@ Olá pessoal me chamo **[Rafael Dutra](http://rafaeldutra.me)** , gostaria de ag
 
 A ideia deste repositório é que aos poucos ele cresça com workshops que irei fazendo em eventos ou em algum meetup por aí.
 
-Como não estou imune a nada, provavelmente você irá encontrar algum erro de português ou pior ainda, de código, pois português se algo ainda errado, o português "ainda funciona", código não.
+Como não estou imune a nada, provavelmente você irá encontrar algum erro de português ou pior ainda, de código, pois português se algo ainda estiver errado o português "funciona", código não.
 
 Deixo abaixo uma lista de onde você pode entrar em contato comigo.
 
@@ -33,4 +33,4 @@ Deixo abaixo uma lista de onde você pode entrar em contato comigo.
 <a name="workshops"></a>
 # Workshops
 
-- [Docker Workshop](docker)
+- [Docker Workshop](docker/docs/index.md)
