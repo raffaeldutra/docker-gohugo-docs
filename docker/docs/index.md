@@ -2,7 +2,7 @@
 
 - [Por que usar Docker?](introduction.md#why-use-docker)
 - [Afinal, o que é?](introduction.md#what-is-docker)
-- [Instalando](instalando.md)
+- [Instalando](installing.md)
 - [O básico](basics.md)
 - [Interagindo com containers](interacting.md)
 - [Dockerfile](dockerfile.md)
