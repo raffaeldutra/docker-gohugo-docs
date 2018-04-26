@@ -56,7 +56,7 @@ Linha 3: estamos dizendo que estamos iniciando um serviço e tudo abaixo dessa l
 
 Linha 4: nome que estamos dando para este container, no nosso caso é um simples "db", mas poderia ser chamado de banco, database e etc.
 
-Linha 5: imagem utilizada do mysql com sua respectiva versão
+Linha 5: imagem utilizada do mysql com sua respectiva versão.
 
 Linha 6 e 7: volume que é utilizado para nosso banco de dados, veja que este valor está ligado diretamente com a definição das linhas 26 e 27.
 
@@ -68,7 +68,7 @@ Linha 15: nome do nosso container, que mais uma vez poderia ser o nome de qualqu
 
 Linha 16: dizemos que para levantar este container, precisamos do container chamado **db** antes em funcionamento.
 
-Linha 18: imagem utilizada do Wordpress com sua respectiva versão, no caso **latest** significa *última*
+Linha 18: imagem utilizada do Wordpress com sua respectiva versão, no caso **latest** significa *última*.
 
 Linha 19 e 20: definição de portas, ou seja, queremos acessar na porta 8000 da nossa máquina a porta 80 que roda lá dentro do container.
 
