@@ -113,62 +113,27 @@ docker search <imagem>
 * Como remover uma imagem?
 
 ```
-docker rmi <imagem>
+docker rmi alpine
 ```
+
+> Aqui iremos obter um erro, pois temos aquele primeiro container -- docker run alpine hostname -- em funcionamento e não é possível remover uma imagem onde há containers rodando.
 
 * Como saber se a imagem que vou utilizar é uma imagem oficial?
 
 ```
-docker search <imagem>
+docker search ubuntu
 ```
 
 * Como baixamos uma imagem?
 
 ```
-docker pull nginx
+docker pull ubuntu
 ```
 
 e para baixarmos uma versão específica, como Ubuntu 18.04? Para isso passe após o : a versão que quer utilizar
 
 ```
 docker pull ubuntu:18.04
-```
-
-
-## Manipulando containers
-
-O comando que executmos incialmente *docker run alpine hostname* é o mais básico possível para termos um container em "funcionamento". O "funcionamento" entre aspas é o que iremos discutir neste momento.
-
-Como sabemos se um container está em pleno funcionamento? ou melhor, como sabemos o "status" de um container?
-
-Utilize o comando:
-
-```
-docker container <comando>
-```
-
-* Queremos listar containers?
-
-```
-docker container ls
-```
-
-* Queremos parar?
-
-```
-docker container stop <nome do container> ou <id do container>
-```
-
-* Queremos iniciar?
-
-```
-docker container start <nome do container> ou <id do container>
-```
-
-Para a lista de comandos que podemos utilizar, simplesmente execute:
-
-```
-docker container
 ```
 
 
@@ -203,6 +168,44 @@ Vamos subir novamente o container com o comando:
 ```
 docker container start <id do container>
 ```
+
+
+## Manipulando containers
+
+O comando que executamos incialmente *docker run alpine hostname* é o mais básico possível para termos um container em "funcionamento". O "funcionamento" entre aspas é o que iremos discutir neste momento.
+
+Antes tentamos remover a imagem *alpine* e obtivemos um erro, mas o que causou o erro? Foi devido que o container está rodando. Então como sabemos se um container está rodando? ou melhor, como sabemos o "status" de um container?
+
+Utilize o comando:
+
+```
+docker container <comando>
+```
+
+* Queremos listar containers?
+
+```
+docker container ls
+```
+
+* Queremos parar?
+
+```
+docker container stop <nome do container> ou <id do container>
+```
+
+* Queremos iniciar?
+
+```
+docker container start <nome do container> ou <id do container>
+```
+
+Para a lista de comandos que podemos utilizar, simplesmente execute:
+
+```
+docker container
+```
+
 
 ## Limpando o que não é usado
 
