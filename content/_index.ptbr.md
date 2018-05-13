@@ -14,6 +14,7 @@ Vamos no decorrer do workshop instalar Docker, rodar comandos simples, entender 
 - [O básico](basics.md)
 - [Interagindo com containers](interacting.md)
 - [Dockerfile](dockerfile.md)
+- [Construindo sua imagem](build.md)
 - [Trabalhando com volumes](volumes.md)
   - [Imagens e camadas](volumes.md#images-and-layers)
   - [Containers e camadas](volumes.md#containers-and-layers)

@@ -1,11 +1,9 @@
-### Maneira 1: A maneira Linux simples de ser
-
-```bash
-curl -fsSL https://get.docker.com/ | sh
-sudo usermod -aG docker <usuario>
-```
-
-### Maneira 2: Forma tradicional
+---
+title: Forma tradicional
+weight: 10
+pre: "<b>1.1.2 </b>"
+chapter: false
+---
 
 Remova a versão antiga (caso tiver).
 
@@ -34,7 +32,7 @@ curl -fsSL https://download.docker.com/linux/$(lsb_release -is | tr '[:upper:]' 
 Adicione o repositório.
 
 ```
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/$(lsb_release -is | tr '[:upper:]' '[:lower:]') $(lsb_release -cs) stable"
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu (lsb_release -cs) stable"
 ```
 
 Vamos atualizar o index dos pacotes apt

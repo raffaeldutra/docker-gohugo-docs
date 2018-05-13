@@ -1,4 +1,9 @@
-# Docker Compose
+---
+title: Docker Compose
+weight: 7
+pre: "<b>1.6 </b>"
+chapter: false
+---
 
 Docker Compose é a maneira de declararmos vários containers para nossa aplicação e ele é "invocado" pelo comando **docker-compose**. Então com isso imaginamos que temos uma aplicação escrita em PHP que utiliza banco de dados MySQL para guardarmos nossos dados.
 

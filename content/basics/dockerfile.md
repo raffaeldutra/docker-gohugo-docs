@@ -1,4 +1,10 @@
-# Dockerfile
+---
+title: Dockerfile
+weight: 5
+pre: "<b>1.3 </b>"
+chapter: false
+---
+
 
 Chegamos então ao arquivo principal de Docker, o tão conhecido **Dockerfile**. Dockerfile é um simples arquivo texto que contem todos os comandos para gerar uma imagem, apenas isso em sua forma mais resumida.
 

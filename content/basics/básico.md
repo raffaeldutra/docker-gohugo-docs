@@ -1,4 +1,9 @@
-# O básico
+---
+title: Básico
+weight: 5
+pre: "<b>1.2 </b>"
+chapter: false
+---
 
 Verifique se está com docker corretamente funcionando, para isso execute o comando:
 

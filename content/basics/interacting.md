@@ -1,4 +1,9 @@
-## Interagindo com containers
+---
+title: Interagindo com containers
+weight: 6
+pre: "<b>1.5 </b>"
+chapter: false
+---
 
 Até agora fizemos alguns poucos exemplos, vamos entrar de fato em um container e trabalhar um pouco com ele.
 

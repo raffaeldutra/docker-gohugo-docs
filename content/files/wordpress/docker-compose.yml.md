@@ -1,3 +1,9 @@
+---
+title: Docker Compose
+chapter: false
+---
+
+```bash
 version: '3.3'
 
 services:
@@ -25,3 +31,4 @@ services:
        WORDPRESS_DB_PASSWORD: wordpress
 volumes:
     db_data:
+```
