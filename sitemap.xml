@@ -3,81 +3,81 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>localhost:1313/basics/installing/</loc>
+    <loc>https://docker.rafaeldutra.me/basics/installing/</loc>
   </url>
   
   <url>
-    <loc>localhost:1313/basics/b%C3%A1sico/</loc>
+    <loc>https://docker.rafaeldutra.me/basics/b%C3%A1sico/</loc>
   </url>
   
   <url>
-    <loc>localhost:1313/basics/</loc>
+    <loc>https://docker.rafaeldutra.me/basics/</loc>
   </url>
   
   <url>
-    <loc>localhost:1313/basics/dockerfile/</loc>
+    <loc>https://docker.rafaeldutra.me/basics/dockerfile/</loc>
   </url>
   
   <url>
-    <loc>localhost:1313/basics/build/</loc>
+    <loc>https://docker.rafaeldutra.me/basics/build/</loc>
   </url>
   
   <url>
-    <loc>localhost:1313/basics/interacting/</loc>
+    <loc>https://docker.rafaeldutra.me/basics/interacting/</loc>
   </url>
   
   <url>
-    <loc>localhost:1313/basics/volumes/</loc>
+    <loc>https://docker.rafaeldutra.me/basics/volumes/</loc>
   </url>
   
   <url>
-    <loc>localhost:1313/basics/docker-compose/</loc>
+    <loc>https://docker.rafaeldutra.me/basics/docker-compose/</loc>
   </url>
   
   <url>
-    <loc>localhost:1313/basics/installing/way1/</loc>
+    <loc>https://docker.rafaeldutra.me/basics/installing/way1/</loc>
   </url>
   
   <url>
-    <loc>localhost:1313/basics/installing/way2/</loc>
+    <loc>https://docker.rafaeldutra.me/basics/installing/way2/</loc>
   </url>
   
   <url>
-    <loc>localhost:1313/basics/reference/</loc>
+    <loc>https://docker.rafaeldutra.me/basics/reference/</loc>
   </url>
   
   <url>
-    <loc>localhost:1313/whoami/</loc>
+    <loc>https://docker.rafaeldutra.me/whoami/</loc>
   </url>
   
   <url>
-    <loc>localhost:1313/</loc>
+    <loc>https://docker.rafaeldutra.me/</loc>
   </url>
   
   <url>
-    <loc>localhost:1313/categories/</loc>
+    <loc>https://docker.rafaeldutra.me/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>localhost:1313/files/wordpress/docker-compose.yml/</loc>
+    <loc>https://docker.rafaeldutra.me/files/wordpress/docker-compose.yml/</loc>
   </url>
   
   <url>
-    <loc>localhost:1313/files/</loc>
+    <loc>https://docker.rafaeldutra.me/files/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>localhost:1313/files/nginx/dockerfile/</loc>
+    <loc>https://docker.rafaeldutra.me/files/nginx/dockerfile/</loc>
   </url>
   
   <url>
-    <loc>localhost:1313/files/php/dockerfile/</loc>
+    <loc>https://docker.rafaeldutra.me/files/php/dockerfile/</loc>
   </url>
   
   <url>
-    <loc>localhost:1313/tags/</loc>
+    <loc>https://docker.rafaeldutra.me/tags/</loc>
     <priority>0</priority>
   </url>
   
