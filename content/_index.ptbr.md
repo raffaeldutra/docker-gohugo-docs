@@ -1,10 +1,10 @@
-# Para quem é este workshop
+# Para quem é esta documentação
 
 Docker revolucionou pela simplicidade de como Software é desenvolvido, testado e adicionado em produção de forma rápida e simples.
 
 O público alvo do nosso workshop são aquelas pessoas que já ouviram falar na tecnologia e até quem sabe já se arriscaram no mundo de containers, mas ainda estão com dúvidas de como utilizar e de que forma ela pode se encaixar no seu dia-a-dia.
 
-Vamos no decorrer do workshop instalar Docker, rodar comandos simples, entender o que eles representam, trabalhar com Dockerfile e evoluirmos até lançarmos alguns containers de uma única vez utilizando Docker Compose.
+Vamos no decorrer da documentação instalar Docker, rodar comandos simples, entender o que eles representam, trabalhar com Dockerfile e evoluirmos até lançarmos alguns containers de uma única vez utilizando Docker Compose.
 
 # Sumário
 
