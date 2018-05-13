@@ -1,7 +1,7 @@
 ---
 title: A maneira Linux simples de ser
-weight: 10
-pre: "<b>1.1.1 </b>"
+weight: 6
+pre: "<b>2.1 </b>"
 chapter: false
 ---
 

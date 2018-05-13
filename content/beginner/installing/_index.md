@@ -1,7 +1,7 @@
 ---
 title: Instalando
-weight: 4
-pre: "<b>1.1 </b>"
+weight: 5
+pre: "<b>2 </b>"
 chapter: false
 ---
 

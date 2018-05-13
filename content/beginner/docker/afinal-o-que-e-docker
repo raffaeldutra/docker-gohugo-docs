@@ -1,0 +1,10 @@
+---
+title: Afinal, o que é Docker?
+weight: 2
+pre: "<b>1.1 </b>"
+chapter: false
+---
+
+Em grande resumo, Docker é uma ferramenta que possibita a criação, deploy e leve gerenciamento de pacotes auto contidos que contêm tudo que é necessário para rodar uma aplicação, como códigos, bibliotecas, configurações de sistemas e dependências e é isso que chamamos de containers.
+
+Cada container é feito deploy com sua própria CPU, memória e recursos de rede.

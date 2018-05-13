@@ -1,7 +1,7 @@
 ---
 title: Criando sua imagem com Dockerfile
 weight: 8
-pre: "<b>1.4 </b>"
+pre: "<b>5 </b>"
 chapter: false
 ---
 

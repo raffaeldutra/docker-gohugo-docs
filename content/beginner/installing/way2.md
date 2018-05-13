@@ -1,7 +1,7 @@
 ---
 title: Forma tradicional
-weight: 10
-pre: "<b>1.1.2 </b>"
+weight: 7
+pre: "<b>2.2 </b>"
 chapter: false
 ---
 
