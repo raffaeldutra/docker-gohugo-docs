@@ -40,7 +40,10 @@ curl -fsSL https://get.docker.com/ | sh
 Rode em algum lugar o comando abaixo, mas atente que ele irá criar um diretório de nome "docker.rafaeldutra.me/hugo", altere caso necessário.
 
 ```bash
-docker run --rm -detached --volume $(pwd):/docker.rafaeldutra.me raffaeldutra/docker-docs /usr/local/bin/hugo new site /docker.rafaeldutra.me/hugo
+docker run --rm -d \
+-v $(pwd):/docker.rafaeldutra.me \
+raffaeldutra/docker-docs \
+/usr/local/bin/hugo new site /docker.rafaeldutra.me/hugo
 ```
 
 Dentro deste diretório trabalhe normalmente, ele contêm a estrutura básica para funcionamento do Hugo.
@@ -62,7 +65,9 @@ docker build -t raffaeldutra/docker-docs .
 Publicação de código, ou seja, transforma todos os arquivos.md para HTML
 
 ```bash
-docker run -it -v $(pwd):/src -v $(pwd)/public:/src/public raffaeldutra/docker-docs
+docker run -it \
+-v $(pwd):/src \
+-v $(pwd)/public:/src/public raffaeldutra/docker-docs
 ```
 
 <a name="como-rodar-um-servidor"></a>
@@ -71,5 +76,8 @@ docker run -it -v $(pwd):/src -v $(pwd)/public:/src/public raffaeldutra/docker-d
 Aqui é possível rodar Hugo em modo servidor
 
 ```bash
-docker run -it -v $(pwd):/src -v $(pwd)/public:/src/public -p 1313:1313 raffaeldutra/docker-docs /gohugo.sh -s
+docker run -it \
+-v $(pwd):/src \
+-v $(pwd)/public:/src/public \
+-p 1313:1313 raffaeldutra/docker-docs /gohugo.sh -s
 ```
