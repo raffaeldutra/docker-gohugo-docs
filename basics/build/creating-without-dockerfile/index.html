@@ -9,7 +9,7 @@
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
-    <title>Whoamis :: Documentação Docker</title>
+    <title>Criando sua imagem sem Dockerfile :: Documentação Docker</title>
     
     
     <link href="/css/nucleus.css?1526206128" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/whoami/">
+  <body class="" data-url="/basics/build/creating-without-dockerfile/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -76,7 +76,7 @@
   
     
     <li data-nav-id="/basics/" title="Docker Básico" class="dd-item 
-        
+        parent
         
         
         ">
@@ -272,7 +272,7 @@
   
     
     <li data-nav-id="/basics/build/" title="Criando sua imagem com Dockerfile" class="dd-item 
-        
+        parent
         
         
         ">
@@ -298,7 +298,7 @@
  
   
     
-      <li data-nav-id="/basics/build/creating-without-dockerfile/" title="Criando sua imagem sem Dockerfile" class="dd-item ">
+      <li data-nav-id="/basics/build/creating-without-dockerfile/" title="Criando sua imagem sem Dockerfile" class="dd-item active">
         <a href="/basics/build/creating-without-dockerfile/">
         <b>1.4.1 </b>Criando sua imagem sem Dockerfile
         <i class="fa fa-check read-icon"></i>
@@ -411,7 +411,7 @@
     
     <li data-nav-id="/files/" title="Files" class="dd-item 
         
-        active
+        
         
         ">
       <a href="/files/">
@@ -501,8 +501,8 @@
   
     
     <li data-nav-id="/whoami/" title="Whoamis" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/whoami/">
@@ -601,6 +601,13 @@
                   
                   
                   
+                  <div id="top-github-link">
+                    <a class="github-link" title='' href="https://github.com/raffaeldutra/docker.raffaeldutra.github.iobasics/build/creating-without-dockerfile.md" target="blank">
+                      <i class="fa fa-code-fork"></i>
+                      <span id="top-github-link-text"></span>
+                    </a>
+                  </div>
+                  
                 
                 
                 <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
@@ -620,7 +627,19 @@
             
           
           
-            <a href='/'></a> > Whoamis
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'></a> > <a href='/basics/'>Docker Básico</a> > <a href='/basics/build/'>Criando sua imagem com Dockerfile</a> > Criando sua imagem sem Dockerfile
+          
+         
+          
+         
           
          
           
@@ -642,17 +661,29 @@
         
         <div id="body-inner">
           
-            <h1>Whoamis</h1>
+            <h1>Criando sua imagem sem Dockerfile</h1>
           
 
         
 
 
+<p>Sim, nós também podemos criar imagens sem precisar de Dockerfile. Vamos ver o seguinte:</p>
+
+<pre><code>docker run --interactive --tty ubuntu /bin/bash
+</code></pre>
+
+<p>Com este comando nós &ldquo;entramos&rdquo; no container. Dentro do container podemos fazer o que quisermos, como adicionar arquivos, remover arquivos, adicionar pacotes e etc.</p>
+
+<p>Vamos então adicionar um pacote. No container, execute:</p>
+
+<pre><code>apt-get update &amp;&amp; apt-get install curl
+</code></pre>
 
 
 <footer class=" footline" >
 	
 </footer>
+
 
         
         </div> 
@@ -685,8 +716,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -703,69 +732,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -823,22 +791,6 @@
                     
 
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -854,89 +806,6 @@
                     
                     
 
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -992,8 +861,172 @@
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                         
                         
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -1016,10 +1049,10 @@
 
 
         
-            <a class="nav nav-prev" href="/files/php/dockerfile/" title="PHP CLI Dockerfile"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/basics/build/" title="Criando sua imagem com Dockerfile"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/whoami/_index.php/" title="Quem sou eu?" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/basics/interacting/" title="Interagindo com containers" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
@@ -1049,3 +1082,4 @@
 
   </body>
 </html>
+

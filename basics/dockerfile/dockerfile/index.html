@@ -9,7 +9,7 @@
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
-    <title>Whoamis :: Documentação Docker</title>
+    <title>Dockerfile :: Documentação Docker</title>
     
     
     <link href="/css/nucleus.css?1526206128" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/whoami/">
+  <body class="" data-url="/basics/dockerfile/dockerfile/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -76,7 +76,7 @@
   
     
     <li data-nav-id="/basics/" title="Docker Básico" class="dd-item 
-        
+        parent
         
         
         ">
@@ -198,7 +198,7 @@
   
     
     <li data-nav-id="/basics/dockerfile/" title="Dockerfile" class="dd-item 
-        
+        parent
         
         
         ">
@@ -224,7 +224,7 @@
  
   
     
-      <li data-nav-id="/basics/dockerfile/dockerfile/" title="Dockerfile" class="dd-item ">
+      <li data-nav-id="/basics/dockerfile/dockerfile/" title="Dockerfile" class="dd-item active">
         <a href="/basics/dockerfile/dockerfile/">
         <b>1.3.1 </b>Dockerfile
         <i class="fa fa-check read-icon"></i>
@@ -411,7 +411,7 @@
     
     <li data-nav-id="/files/" title="Files" class="dd-item 
         
-        active
+        
         
         ">
       <a href="/files/">
@@ -501,8 +501,8 @@
   
     
     <li data-nav-id="/whoami/" title="Whoamis" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/whoami/">
@@ -601,6 +601,13 @@
                   
                   
                   
+                  <div id="top-github-link">
+                    <a class="github-link" title='' href="https://github.com/raffaeldutra/docker.raffaeldutra.github.iobasics/dockerfile/dockerfile.md" target="blank">
+                      <i class="fa fa-code-fork"></i>
+                      <span id="top-github-link-text"></span>
+                    </a>
+                  </div>
+                  
                 
                 
                 <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
@@ -620,7 +627,19 @@
             
           
           
-            <a href='/'></a> > Whoamis
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'></a> > <a href='/basics/'>Docker Básico</a> > <a href='/basics/dockerfile/'>Dockerfile</a> > Dockerfile
+          
+         
+          
+         
           
          
           
@@ -642,17 +661,37 @@
         
         <div id="body-inner">
           
-            <h1>Whoamis</h1>
+            <h1>Dockerfile</h1>
           
 
         
 
 
+<p>Aqui um exemplo utilizando como base a imagem Nginx que já estavámos utilizando anteriormente com o máximo de comandos que o Dockerfile suporta e que vimos acima.</p>
+
+<pre><code>FROM nginx:latest
+
+LABEL description=&quot;Docker imagem que será gerada no nosso exmeplo.&quot;
+LABEL maintainer=&quot;Rafael Dutra &lt;raffaeldutra@gmail.com&gt;&quot;
+
+ENV FOSSDAY Lajeado
+ENV QUANDO 5/5 2018
+
+RUN apt-get update &amp;&amp; \
+    apt-get install git --yes
+
+ADD index.html /usr/share/nginx/html/index.html
+
+EXPOSE 80
+
+CMD [&quot;nginx&quot;, &quot;-g&quot;, &quot;daemon off;&quot;]
+</code></pre>
 
 
 <footer class=" footline" >
 	
 </footer>
+
 
         
         </div> 
@@ -685,8 +724,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -703,69 +740,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -823,22 +799,6 @@
                     
 
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -847,6 +807,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -854,14 +815,12 @@
                     
                     
 
-                    
-            
-        
                     
                         
             
             
                 
+                    
                     
                 
                 
@@ -879,21 +838,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
+                        
                     
                 
                 
@@ -938,6 +884,25 @@
             
         
                     
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
             
             
@@ -970,6 +935,22 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -978,6 +959,69 @@
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -992,9 +1036,6 @@
             
                 
                     
-                        
-                        
-                    
                 
                 
 
@@ -1016,10 +1057,10 @@
 
 
         
-            <a class="nav nav-prev" href="/files/php/dockerfile/" title="PHP CLI Dockerfile"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/basics/dockerfile/" title="Dockerfile"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/whoami/_index.php/" title="Quem sou eu?" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/basics/dockerfile/creating-image/" title="Criando nossa imagem utilizando o Dockerfile" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
@@ -1049,3 +1090,4 @@
 
   </body>
 </html>
+

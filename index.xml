@@ -23,25 +23,36 @@ rafael @ nazgul ~ └─ $ ▶ docker version Client: Version:	17.12.0-ce API ve
     
     <item>
       <title>Dockerfile</title>
-      <link>https://docker.rafaeldutra.me/basics/dockerfile/</link>
+      <link>https://docker.rafaeldutra.me/basics/dockerfile/dockerfile/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://docker.rafaeldutra.me/basics/dockerfile/</guid>
-      <description>Chegamos então ao arquivo principal de Docker, o tão conhecido Dockerfile. Dockerfile é um simples arquivo texto que contem todos os comandos para gerar uma imagem, apenas isso em sua forma mais resumida.
-Se você já conhece um pouco de CLI (Command Line Interface) de GNU/Linux, provavelmente não terá nenhum problema para utilizar Dockerfile, pois ele é basicamente comando que você já usa.
-Aqui está a lista dos comandos que você pode utilizar dentro do seu arquivo.</description>
+      <guid>https://docker.rafaeldutra.me/basics/dockerfile/dockerfile/</guid>
+      <description>Aqui um exemplo utilizando como base a imagem Nginx que já estavámos utilizando anteriormente com o máximo de comandos que o Dockerfile suporta e que vimos acima.
+FROM nginx:latest LABEL description=&amp;quot;Docker imagem que será gerada no nosso exmeplo.&amp;quot; LABEL maintainer=&amp;quot;Rafael Dutra &amp;lt;raffaeldutra@gmail.com&amp;gt;&amp;quot; ENV FOSSDAY Lajeado ENV QUANDO 5/5 2018 RUN apt-get update &amp;amp;&amp;amp; \ apt-get install git --yes ADD index.html /usr/share/nginx/html/index.html EXPOSE 80 CMD [&amp;quot;nginx&amp;quot;, &amp;quot;-g&amp;quot;, &amp;quot;daemon off;&amp;quot;]  </description>
     </item>
     
     <item>
-      <title>Criando sua imagem usando Dockerfile</title>
-      <link>https://docker.rafaeldutra.me/basics/build/</link>
+      <title>Criando nossa imagem utilizando o Dockerfile</title>
+      <link>https://docker.rafaeldutra.me/basics/dockerfile/creating-image/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://docker.rafaeldutra.me/basics/build/</guid>
-      <description>Para criamos nossa imagem, precisamos de um arquivo Dockerfile conforme visto aqui. Com este arquivo podemos criar nossas próprias imagens de uma forma organizada e automatizada.
-Para criarmos ela, devemos executar o comando
-docker build --tag nomeDaImagemQueDeseja:versao.1 .  Devemos atentar par duas coisas aqui:
-1 - O arquivo Dockerfile deve estar (mas podemos passar parâmetro, mas não vamos discutir isso agora) no mesmo diretório onde você está executando o comando.</description>
+      <guid>https://docker.rafaeldutra.me/basics/dockerfile/creating-image/</guid>
+      <description>É realmente simples gerarmos uma imagem com o nosso arquivo, segue um exemplo de como isto pode ser feito.
+docker build --tag fossday/nginx:0.1 .  Agora vamos executar o nosso container baseado na imagem que acabamos de gerar.
+docker run --interactive --tty --publish 46000:80 fossday/nginx:0.1 /bin/bash  Vamos acessa a url e ver o que nos espera, http://localhost:46000
+ O que aconteceu? Qual o motivo de alterarmos o arquivo index.html em nossa máquina e nada aconteceu na página?</description>
+    </item>
+    
+    <item>
+      <title>Criando sua imagem sem Dockerfile</title>
+      <link>https://docker.rafaeldutra.me/basics/build/creating-without-dockerfile/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docker.rafaeldutra.me/basics/build/creating-without-dockerfile/</guid>
+      <description>Sim, nós também podemos criar imagens sem precisar de Dockerfile. Vamos ver o seguinte:
+docker run --interactive --tty ubuntu /bin/bash  Com este comando nós &amp;ldquo;entramos&amp;rdquo; no container. Dentro do container podemos fazer o que quisermos, como adicionar arquivos, remover arquivos, adicionar pacotes e etc.
+Vamos então adicionar um pacote. No container, execute:
+apt-get update &amp;amp;&amp;amp; apt-get install curl  </description>
     </item>
     
     <item>
@@ -54,28 +65,6 @@ docker build --tag nomeDaImagemQueDeseja:versao.1 .  Devemos atentar par duas co
 Execute o seguinte comando:
 docker run --interactive --tty --publish 45000:80 nginx /bin/bash   Edite o arquivo /usr/share/nginx/html/index.html com o vim  O que aconteceu?
 apt-get update &amp;amp;&amp;amp; apt-get install vim --yes  Vamos acessar novamente o nosso web server na porta 45000 e percebemos que? Pois então, ao entrarmos dentro de um container, nós &amp;ldquo;perdemos&amp;rdquo; a execução de comando/entrypoint que a imagem foi destinada e para entedemos melhor, vamos ver como esta imagem do nginx foi criada.</description>
-    </item>
-    
-    <item>
-      <title>Volumes</title>
-      <link>https://docker.rafaeldutra.me/basics/volumes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docker.rafaeldutra.me/basics/volumes/</guid>
-      <description>Storage drivers Antes de iniciarmos com volumes, é realmente importante entedermos um pouco como funcionam as imagens, pois como foi dito em algum momento, um container só existe se houver uma imagem (em uma forma resumida).
-Storage driver permitem que você crie dados em uma camada de escrita/gravação do seu container. O importante aqui neste momento é: quando contianer parar, nenhum dado será persistifo &amp;ndash; leia-se gravado em disco.</description>
-    </item>
-    
-    <item>
-      <title>Docker Compose</title>
-      <link>https://docker.rafaeldutra.me/basics/docker-compose/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docker.rafaeldutra.me/basics/docker-compose/</guid>
-      <description>Docker Compose é a maneira de declararmos vários containers para nossa aplicação e ele é &amp;ldquo;invocado&amp;rdquo; pelo comando docker-compose. Então com isso imaginamos que temos uma aplicação escrita em PHP que utiliza banco de dados MySQL para guardarmos nossos dados.
-Exemplos:
- temos uma aplicação escrita em PHP temos um banco de dados em MySQL  ou ainda, o tão famoso Wordpress:
- temos o Wordpress temos o banco de dados do Wordpress  Não importa aqui o exemplo, o que importa é a ideia de termos &amp;ldquo;coisas separadas, vamos simplificar a ideia nisso apenas.</description>
     </item>
     
     <item>
@@ -102,12 +91,51 @@ sudo apt-get install \ apt-transport-https \ ca-certificates \ curl \ software-p
     </item>
     
     <item>
+      <title>Volumes</title>
+      <link>https://docker.rafaeldutra.me/basics/volumes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docker.rafaeldutra.me/basics/volumes/</guid>
+      <description>Storage drivers Antes de iniciarmos com volumes, é realmente importante entedermos um pouco como funcionam as imagens, pois como foi dito em algum momento, um container só existe se houver uma imagem (em uma forma resumida).
+Storage driver permitem que você crie dados em uma camada de escrita/gravação do seu container. O importante aqui neste momento é: quando contianer parar, nenhum dado será persistifo &amp;ndash; leia-se gravado em disco.</description>
+    </item>
+    
+    <item>
+      <title>Docker Compose</title>
+      <link>https://docker.rafaeldutra.me/basics/docker-compose/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docker.rafaeldutra.me/basics/docker-compose/</guid>
+      <description>Docker Compose é a maneira de declararmos vários containers para nossa aplicação e ele é &amp;ldquo;invocado&amp;rdquo; pelo comando docker-compose. Então com isso imaginamos que temos uma aplicação escrita em PHP que utiliza banco de dados MySQL para guardarmos nossos dados.
+Exemplos:
+ temos uma aplicação escrita em PHP temos um banco de dados em MySQL  ou ainda, o tão famoso Wordpress:
+ temos o Wordpress temos o banco de dados do Wordpress  Não importa aqui o exemplo, o que importa é a ideia de termos &amp;ldquo;coisas separadas, vamos simplificar a ideia nisso apenas.</description>
+    </item>
+    
+    <item>
       <title>Referências</title>
       <link>https://docker.rafaeldutra.me/basics/reference/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://docker.rafaeldutra.me/basics/reference/</guid>
-      <description> Referências  Docker site oficial Docker imagens e camadas  </description>
+      <description> Docker site oficial Docker imagens e camadas  </description>
+    </item>
+    
+    <item>
+      <title>Quem sou eu?</title>
+      <link>https://docker.rafaeldutra.me/whoami/_index.php/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docker.rafaeldutra.me/whoami/_index.php/</guid>
+      <description>Olá pessoal me chamo Rafael Dutra.
+Como não estou imune a nada, provavelmente você irá encontrar algum erro de português ou pior ainda, de código, pois português se algo ainda estiver errado o português &amp;ldquo;funciona&amp;rdquo;, código não.
+Deixo abaixo uma lista de onde você pode entrar em contato comigo.
+ E-mail: raffaeldutra@gmail.com
+ Site: http://rafaeldutra.me
+ Twitter: https://twitter.com/raffaeldutra
+ Slideshare: https://www.slideshare.net/raffaeldutra
+ Google Plus: https://plus.google.com/+RafaelDutra
+ Github: https://github.com/raffaeldutra Linkedin: https://linkedin.com/in/rafaeldutra Youtube: Youtube  </description>
     </item>
     
     <item>

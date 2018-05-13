@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Whoamis on Documentação Docker</title>
+    <link>https://docker.rafaeldutra.me/whoami/</link>
+    <description>Recent content in Whoamis on Documentação Docker</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    
+	<atom:link href="https://docker.rafaeldutra.me/whoami/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Quem sou eu?</title>
+      <link>https://docker.rafaeldutra.me/whoami/_index.php/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docker.rafaeldutra.me/whoami/_index.php/</guid>
+      <description>Olá pessoal me chamo Rafael Dutra.
+Como não estou imune a nada, provavelmente você irá encontrar algum erro de português ou pior ainda, de código, pois português se algo ainda estiver errado o português &amp;ldquo;funciona&amp;rdquo;, código não.
+Deixo abaixo uma lista de onde você pode entrar em contato comigo.
+ E-mail: raffaeldutra@gmail.com
+ Site: http://rafaeldutra.me
+ Twitter: https://twitter.com/raffaeldutra
+ Slideshare: https://www.slideshare.net/raffaeldutra
+ Google Plus: https://plus.google.com/+RafaelDutra
+ Github: https://github.com/raffaeldutra Linkedin: https://linkedin.com/in/rafaeldutra Youtube: Youtube  </description>
+    </item>
+    
+  </channel>
+</rss>

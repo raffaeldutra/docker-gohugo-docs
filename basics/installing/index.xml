@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Instalando on Documentação Docker</title>
+    <link>https://docker.rafaeldutra.me/basics/installing/</link>
+    <description>Recent content in Instalando on Documentação Docker</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    
+	<atom:link href="https://docker.rafaeldutra.me/basics/installing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A maneira Linux simples de ser</title>
+      <link>https://docker.rafaeldutra.me/basics/installing/way1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docker.rafaeldutra.me/basics/installing/way1/</guid>
+      <description>Dependendo da versão do seu Ubuntu, Debian e etc, pode Baixe Docker com o comando mágico (funciona somente em Sistemas Operacionais). Windows, sorry :-)
+ curl -fsSL https://get.docker.com/ | sh sudo usermod -aG docker &amp;lt;usuario&amp;gt;  Depois disso, você precisa fazer logoff para funcionar com este usuário.</description>
+    </item>
+    
+    <item>
+      <title>Forma tradicional</title>
+      <link>https://docker.rafaeldutra.me/basics/installing/way2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docker.rafaeldutra.me/basics/installing/way2/</guid>
+      <description>Remova a versão antiga (caso tiver).
+sudo apt-get remove docker docker-engine docker.io  Instale os pacotes que permitem que o apt possa utilizar repositórios com https
+sudo apt-get install \ apt-transport-https \ ca-certificates \ curl \ software-properties-common  Agora instale a chave GPG do Docker
+ Preste atenção na sua distribuição abaixo
+ curl -fsSL https://download.docker.com/linux/$(lsb_release -is | tr &#39;[:upper:]&#39; &#39;[:lower:]&#39;)/gpg | sudo apt-key add -  Adicione o repositório.</description>
+    </item>
+    
+  </channel>
+</rss>
