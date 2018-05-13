@@ -1,6 +1,6 @@
 ---
 title: Docker Compose
-weight: 7
+weight: 11
 pre: "<b>1.6 </b>"
 chapter: false
 ---
