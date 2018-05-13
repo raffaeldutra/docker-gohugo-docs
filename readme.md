@@ -6,7 +6,7 @@
 
 # Leia
 
-Por enquanto ainda estou formatando este documento, retorne em breve
+Por enquanto ainda estou formatando este documento, retorne em breve.
 
 # Sumário
 
