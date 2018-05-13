@@ -9,7 +9,7 @@
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
-    <title>Quem sou eu? :: Documentação Docker</title>
+    <title>Manipulando containers :: Documentação Docker</title>
     
     
     <link href="/css/nucleus.css?1526236750" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/whoami/">
+  <body class="" data-url="/beginner/commands/manipulando-containers/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -76,7 +76,7 @@
   
     
     <li data-nav-id="/beginner/" title="Docker Básico" class="dd-item 
-        
+        parent
         
         
         ">
@@ -205,7 +205,7 @@
   
     
     <li data-nav-id="/beginner/commands/" title="Rodando containers" class="dd-item 
-        
+        parent
         
         
         ">
@@ -307,7 +307,7 @@
  
   
     
-      <li data-nav-id="/beginner/commands/manipulando-containers/" title="Manipulando containers" class="dd-item ">
+      <li data-nav-id="/beginner/commands/manipulando-containers/" title="Manipulando containers" class="dd-item active">
         <a href="/beginner/commands/manipulando-containers/">
         <b>3.5 </b>Manipulando containers
         <i class="fa fa-check read-icon"></i>
@@ -567,8 +567,8 @@
   
     
     <li data-nav-id="/whoami/" title="Quem sou eu?" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/whoami/">
@@ -730,7 +730,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='' href="https://github.com/raffaeldutra/docker.raffaeldutra.github.iowhoami/_index.md" target="blank">
+                    <a class="github-link" title='' href="https://github.com/raffaeldutra/docker.raffaeldutra.github.iobeginner/commands/manipulando-containers.md" target="blank">
                       <i class="fa fa-code-fork"></i>
                       <span id="top-github-link-text"></span>
                     </a>
@@ -755,7 +755,19 @@
             
           
           
-            <a href='/'></a> > Quem sou eu?
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'></a> > <a href='/beginner/'>Docker Básico</a> > <a href='/beginner/commands/'>Rodando containers</a> > Manipulando containers
+          
+         
+          
+         
           
          
           
@@ -777,33 +789,52 @@
         
         <div id="body-inner">
           
-            <h1>Quem sou eu?</h1>
+            <h1>Manipulando containers</h1>
           
 
         
 
 
-<p>Olá pessoal me chamo <strong><a href="http://rafaeldutra.me">Rafael Dutra</a></strong>.</p>
+<p>O comando que executamos incialmente <em>docker run alpine hostname</em> é o mais básico possível para termos um container em &ldquo;funcionamento&rdquo;. O &ldquo;funcionamento&rdquo; entre aspas é o que iremos discutir neste momento.</p>
 
-<p>Como não estou imune a nada, provavelmente você irá encontrar algum erro de português ou pior ainda, de código, pois português se algo ainda estiver errado o português &ldquo;funciona&rdquo;, código não.</p>
+<p>Antes tentamos remover a imagem <em>alpine</em> e obtivemos um erro, mas o que causou o erro? Foi devido que o container está rodando. Então como sabemos se um container está rodando? ou melhor, como sabemos o &ldquo;status&rdquo; de um container?</p>
 
-<p>Deixo abaixo uma lista de onde você pode entrar em contato comigo.</p>
+<p>Utilize o comando:</p>
+
+<pre><code>docker container &lt;comando&gt;
+</code></pre>
 
 <ul>
-<li>E-mail: <a href="mailto:raffaeldutra@gmail.com?Subject=Contato via Github">raffaeldutra@gmail.com</a><br /></li>
-<li>Site: <a href="http://rafaeldutra.me">http://rafaeldutra.me</a><br /></li>
-<li>Twitter: <a href="https://twitter.com/raffaeldutra">https://twitter.com/raffaeldutra</a><br /></li>
-<li>Slideshare: <a href="https://www.slideshare.net/raffaeldutra">https://www.slideshare.net/raffaeldutra</a><br /></li>
-<li>Google Plus: <a href="https://plus.google.com/+RafaelDutra">https://plus.google.com/+RafaelDutra</a><br /></li>
-<li>Github: <a href="https://github.com/raffaeldutra">https://github.com/raffaeldutra</a></li>
-<li>Linkedin: <a href="https://linkedin.com/in/rafaeldutra">https://linkedin.com/in/rafaeldutra</a></li>
-<li>Youtube: <a href="https://youtube.com/raffaeldutra/watch?v=jXqfY0Nn53Q&list=PLZJThJjvPpHlgV4AjZDstipTZhEuV_OIz">Youtube</a></li>
+<li>Queremos listar containers?</li>
 </ul>
+
+<pre><code>docker container ls
+</code></pre>
+
+<ul>
+<li>Queremos parar?</li>
+</ul>
+
+<pre><code>docker container stop &lt;nome do container&gt; ou &lt;id do container&gt;
+</code></pre>
+
+<ul>
+<li>Queremos iniciar?</li>
+</ul>
+
+<pre><code>docker container start &lt;nome do container&gt; ou &lt;id do container&gt;
+</code></pre>
+
+<p>Para a lista de comandos que podemos utilizar, simplesmente execute:</p>
+
+<pre><code>docker container
+</code></pre>
 
 
 <footer class=" footline" >
 	
 </footer>
+
 
         
         </div> 
@@ -836,8 +867,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -853,6 +882,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -918,6 +950,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -931,21 +964,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
+                        
                     
                 
                 
@@ -1011,6 +1031,26 @@
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
                 
                 
 
@@ -1177,7 +1217,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -1194,9 +1233,6 @@
             
                 
                     
-                        
-                        
-                    
                 
                 
 
@@ -1204,22 +1240,6 @@
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -1253,6 +1273,22 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1263,10 +1299,10 @@
 
 
         
-            <a class="nav nav-prev" href="/beginner/reference/" title="Referências"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/beginner/commands/gerenciando-containers/" title="Gerenciando os containers"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/files/" title="Files" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/beginner/commands/limpando-o-que-nao-e-usado/" title="Limpando o que não é usado" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
@@ -1296,3 +1332,4 @@
 
   </body>
 </html>
+

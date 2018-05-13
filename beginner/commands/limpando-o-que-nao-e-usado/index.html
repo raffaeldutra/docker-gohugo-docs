@@ -9,7 +9,7 @@
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
-    <title>Quem sou eu? :: Documentação Docker</title>
+    <title>Limpando o que não é usado :: Documentação Docker</title>
     
     
     <link href="/css/nucleus.css?1526236750" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/whoami/">
+  <body class="" data-url="/beginner/commands/limpando-o-que-nao-e-usado/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -76,7 +76,7 @@
   
     
     <li data-nav-id="/beginner/" title="Docker Básico" class="dd-item 
-        
+        parent
         
         
         ">
@@ -205,7 +205,7 @@
   
     
     <li data-nav-id="/beginner/commands/" title="Rodando containers" class="dd-item 
-        
+        parent
         
         
         ">
@@ -326,7 +326,7 @@
  
   
     
-      <li data-nav-id="/beginner/commands/limpando-o-que-nao-e-usado/" title="Limpando o que não é usado" class="dd-item ">
+      <li data-nav-id="/beginner/commands/limpando-o-que-nao-e-usado/" title="Limpando o que não é usado" class="dd-item active">
         <a href="/beginner/commands/limpando-o-que-nao-e-usado/">
         <b>3.6 </b>Limpando o que não é usado
         <i class="fa fa-check read-icon"></i>
@@ -567,8 +567,8 @@
   
     
     <li data-nav-id="/whoami/" title="Quem sou eu?" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/whoami/">
@@ -730,7 +730,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='' href="https://github.com/raffaeldutra/docker.raffaeldutra.github.iowhoami/_index.md" target="blank">
+                    <a class="github-link" title='' href="https://github.com/raffaeldutra/docker.raffaeldutra.github.iobeginner/commands/limpando-o-que-nao-e-usado.md" target="blank">
                       <i class="fa fa-code-fork"></i>
                       <span id="top-github-link-text"></span>
                     </a>
@@ -755,7 +755,19 @@
             
           
           
-            <a href='/'></a> > Quem sou eu?
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'></a> > <a href='/beginner/'>Docker Básico</a> > <a href='/beginner/commands/'>Rodando containers</a> > Limpando o que não é usado
+          
+         
+          
+         
           
          
           
@@ -777,33 +789,54 @@
         
         <div id="body-inner">
           
-            <h1>Quem sou eu?</h1>
+            <h1>Limpando o que não é usado</h1>
           
 
         
 
 
-<p>Olá pessoal me chamo <strong><a href="http://rafaeldutra.me">Rafael Dutra</a></strong>.</p>
+<p>Você irá notar que depois de muitos comandos para lá e para cá, muitas coisas ficaram para trás, como containers parados, imagens não &ldquo;funcionais&rdquo; e etc. Para limparmos essa bagunça, execute o comando abaixo:</p>
 
-<p>Como não estou imune a nada, provavelmente você irá encontrar algum erro de português ou pior ainda, de código, pois português se algo ainda estiver errado o português &ldquo;funciona&rdquo;, código não.</p>
+<pre><code>docker system prune
+</code></pre>
 
-<p>Deixo abaixo uma lista de onde você pode entrar em contato comigo.</p>
+<p>Você irá receber algo do tipo:</p>
 
-<ul>
-<li>E-mail: <a href="mailto:raffaeldutra@gmail.com?Subject=Contato via Github">raffaeldutra@gmail.com</a><br /></li>
-<li>Site: <a href="http://rafaeldutra.me">http://rafaeldutra.me</a><br /></li>
-<li>Twitter: <a href="https://twitter.com/raffaeldutra">https://twitter.com/raffaeldutra</a><br /></li>
-<li>Slideshare: <a href="https://www.slideshare.net/raffaeldutra">https://www.slideshare.net/raffaeldutra</a><br /></li>
-<li>Google Plus: <a href="https://plus.google.com/+RafaelDutra">https://plus.google.com/+RafaelDutra</a><br /></li>
-<li>Github: <a href="https://github.com/raffaeldutra">https://github.com/raffaeldutra</a></li>
-<li>Linkedin: <a href="https://linkedin.com/in/rafaeldutra">https://linkedin.com/in/rafaeldutra</a></li>
-<li>Youtube: <a href="https://youtube.com/raffaeldutra/watch?v=jXqfY0Nn53Q&list=PLZJThJjvPpHlgV4AjZDstipTZhEuV_OIz">Youtube</a></li>
-</ul>
+<pre><code>rafael @ nazgul ~
+└─ $ ▶ docker system prune
+WARNING! This will remove:
+        - all stopped containers
+        - all networks not used by at least one container
+        - all dangling images
+        - all build cache
+Are you sure you want to continue? [y/N] y
+Deleted Containers:
+7ed46aef747a7726285ecde46f7fbcd37fb932e1d106a5552a5ec6205cb45f2f
+847d0f4d36f2b295804778ea69d33e3f9e4fbaf968fec9c244126955aba50e9b
+a47ad7b67d69698896b290f6daf7e4f65760a38a15a2ba10ed87e3d33ecc1032
+dfcbe65a5ae70c204abec0f8a224d1373804c64a927ada38f09d773aca29020d
+62126d53d79232d6bd687a68990e5ef05b5e9e3f8e678286994e2370e9c6faed
+b9427ac05e95b6a7256dec9d53578ed1d05c6792333917e69be5f71e074a5a50
+076a96cd455ad7d7a97d2756b8bd1768aa474fccb7c73022fc94aa013ff0a274
+afdf2d8219b5917ba9e110657e0364d7c9f407e1871631669912b626bf6033a8
+498da065d6e5f19e27828336a9c0a72dcce284de7ccf21e469266fb8a67a7e3d
+a5dadf4de7549d7923aa9a00b5851813efd8ac7f1dd2410397865bc64955af57
+365ae9546d039aba3e8df2abc5132310e2ec67f54bc20e0ac6c2e5b35e55052a
+5c0e6625bda621820dc18479231a7018d7c11dd6fa933c0c4842e575041a34a0
+f0e9646730cd1bd8360e2fa2a71c8bfb3910968047acffe01f772c88f75b940e
+
+Deleted Images:
+deleted: sha256:2d92e5d5adbe5e207b36d93bd14d8b75919d4a118c86f4b137a9c46481b98fef
+deleted: sha256:8ae3118b00c274114fd91dc96628b845e0ff4722717bfdf343c2207bad1ec01f
+
+Total reclaimed space: 70.62MB
+</code></pre>
 
 
 <footer class=" footline" >
 	
 </footer>
+
 
         
         </div> 
@@ -836,8 +869,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -853,6 +884,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -918,6 +952,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -931,21 +966,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
+                        
                     
                 
                 
@@ -1022,156 +1044,6 @@
             
         
                     
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
                         
             
             
@@ -1185,6 +1057,9 @@
                     
                     
 
+                    
+            
+        
                     
             
         
@@ -1237,6 +1112,169 @@
             
         
                     
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
             
             
@@ -1263,10 +1301,10 @@
 
 
         
-            <a class="nav nav-prev" href="/beginner/reference/" title="Referências"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/beginner/commands/manipulando-containers/" title="Manipulando containers"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/files/" title="Files" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/beginner/dockerfile/" title="Dockerfile" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
@@ -1296,3 +1334,4 @@
 
   </body>
 </html>
+

@@ -9,7 +9,7 @@
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
-    <title>Quem sou eu? :: Documentação Docker</title>
+    <title>Rodando um container :: Documentação Docker</title>
     
     
     <link href="/css/nucleus.css?1526236750" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/whoami/">
+  <body class="" data-url="/beginner/commands/rodando-container/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -76,7 +76,7 @@
   
     
     <li data-nav-id="/beginner/" title="Docker Básico" class="dd-item 
-        
+        parent
         
         
         ">
@@ -205,7 +205,7 @@
   
     
     <li data-nav-id="/beginner/commands/" title="Rodando containers" class="dd-item 
-        
+        parent
         
         
         ">
@@ -250,7 +250,7 @@
  
   
     
-      <li data-nav-id="/beginner/commands/rodando-container/" title="Rodando um container" class="dd-item ">
+      <li data-nav-id="/beginner/commands/rodando-container/" title="Rodando um container" class="dd-item active">
         <a href="/beginner/commands/rodando-container/">
         <b>3.2 </b>Rodando um container
         <i class="fa fa-check read-icon"></i>
@@ -567,8 +567,8 @@
   
     
     <li data-nav-id="/whoami/" title="Quem sou eu?" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/whoami/">
@@ -730,7 +730,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='' href="https://github.com/raffaeldutra/docker.raffaeldutra.github.iowhoami/_index.md" target="blank">
+                    <a class="github-link" title='' href="https://github.com/raffaeldutra/docker.raffaeldutra.github.iobeginner/commands/rodando-container.md" target="blank">
                       <i class="fa fa-code-fork"></i>
                       <span id="top-github-link-text"></span>
                     </a>
@@ -755,7 +755,19 @@
             
           
           
-            <a href='/'></a> > Quem sou eu?
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'></a> > <a href='/beginner/'>Docker Básico</a> > <a href='/beginner/commands/'>Rodando containers</a> > Rodando um container
+          
+         
+          
+         
           
          
           
@@ -777,33 +789,37 @@
         
         <div id="body-inner">
           
-            <h1>Quem sou eu?</h1>
+            <h1>Rodando um container</h1>
           
 
         
 
 
-<p>Olá pessoal me chamo <strong><a href="http://rafaeldutra.me">Rafael Dutra</a></strong>.</p>
+<pre><code>docker run alpine hostname
+</code></pre>
 
-<p>Como não estou imune a nada, provavelmente você irá encontrar algum erro de português ou pior ainda, de código, pois português se algo ainda estiver errado o português &ldquo;funciona&rdquo;, código não.</p>
+<p>Você provavelmente teve uma resposta com letras e números, algo como: <em>7ed46aef747a</em>.<br />
+O que acabamos de ver aqui é o nome do container no momento que você o executou.</p>
 
-<p>Deixo abaixo uma lista de onde você pode entrar em contato comigo.</p>
+<p>Vamos explicar por partes o que o comando acima faz:</p>
 
 <ul>
-<li>E-mail: <a href="mailto:raffaeldutra@gmail.com?Subject=Contato via Github">raffaeldutra@gmail.com</a><br /></li>
-<li>Site: <a href="http://rafaeldutra.me">http://rafaeldutra.me</a><br /></li>
-<li>Twitter: <a href="https://twitter.com/raffaeldutra">https://twitter.com/raffaeldutra</a><br /></li>
-<li>Slideshare: <a href="https://www.slideshare.net/raffaeldutra">https://www.slideshare.net/raffaeldutra</a><br /></li>
-<li>Google Plus: <a href="https://plus.google.com/+RafaelDutra">https://plus.google.com/+RafaelDutra</a><br /></li>
-<li>Github: <a href="https://github.com/raffaeldutra">https://github.com/raffaeldutra</a></li>
-<li>Linkedin: <a href="https://linkedin.com/in/rafaeldutra">https://linkedin.com/in/rafaeldutra</a></li>
-<li>Youtube: <a href="https://youtube.com/raffaeldutra/watch?v=jXqfY0Nn53Q&list=PLZJThJjvPpHlgV4AjZDstipTZhEuV_OIz">Youtube</a></li>
+<li><strong>docker run</strong> executa um container</li>
+<li><strong>alpine</strong> é o nome da imagem que estamos Utilizando</li>
+<li><strong>hostname</strong> é o comando que é executado dentro do container, por isso obtemos aquele conjunto de números e letras como resposta quando executamos o comando.</li>
+</ul>
+
+<p>O que iremos ver agora é:</p>
+
+<ul>
+<li>Executando o comando acima algumas vezes, o resultado mudou?</li>
 </ul>
 
 
 <footer class=" footline" >
 	
 </footer>
+
 
         
         </div> 
@@ -836,8 +852,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -853,6 +867,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -918,6 +935,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -930,6 +948,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -947,21 +968,6 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -979,136 +985,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -1177,26 +1055,6 @@
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
                 
                 
 
@@ -1237,6 +1095,169 @@
             
         
                     
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
             
             
@@ -1263,10 +1284,10 @@
 
 
         
-            <a class="nav nav-prev" href="/beginner/reference/" title="Referências"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/beginner/commands/commands/" title="Comandos"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/files/" title="Files" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/beginner/commands/utilizando-imagens/" title="Utilizando imagens" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
@@ -1296,3 +1317,4 @@
 
   </body>
 </html>
+

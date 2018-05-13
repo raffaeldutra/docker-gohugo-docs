@@ -9,7 +9,7 @@
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
-    <title>Quem sou eu? :: Documentação Docker</title>
+    <title>Dockerfile :: Documentação Docker</title>
     
     
     <link href="/css/nucleus.css?1526236750" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/whoami/">
+  <body class="" data-url="/beginner/dockerfile/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -76,7 +76,7 @@
   
     
     <li data-nav-id="/beginner/" title="Docker Básico" class="dd-item 
-        
+        parent
         
         
         ">
@@ -355,8 +355,8 @@
   
     
     <li data-nav-id="/beginner/dockerfile/" title="Dockerfile" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/beginner/dockerfile/">
@@ -567,8 +567,8 @@
   
     
     <li data-nav-id="/whoami/" title="Quem sou eu?" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/whoami/">
@@ -730,7 +730,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='' href="https://github.com/raffaeldutra/docker.raffaeldutra.github.iowhoami/_index.md" target="blank">
+                    <a class="github-link" title='' href="https://github.com/raffaeldutra/docker.raffaeldutra.github.iobeginner/dockerfile/_index.md" target="blank">
                       <i class="fa fa-code-fork"></i>
                       <span id="top-github-link-text"></span>
                     </a>
@@ -755,7 +755,13 @@
             
           
           
-            <a href='/'></a> > Quem sou eu?
+            
+            
+          
+          
+            <a href='/'></a> > <a href='/beginner/'>Docker Básico</a> > Dockerfile
+          
+         
           
          
           
@@ -777,27 +783,30 @@
         
         <div id="body-inner">
           
-            <h1>Quem sou eu?</h1>
+            <h1>Dockerfile</h1>
           
 
         
 
 
-<p>Olá pessoal me chamo <strong><a href="http://rafaeldutra.me">Rafael Dutra</a></strong>.</p>
+<p>Chegamos então ao arquivo principal de Docker, o tão conhecido <strong>Dockerfile</strong>. Dockerfile é um simples arquivo texto que contem todos os comandos para gerar uma imagem, apenas isso em sua forma mais resumida.</p>
 
-<p>Como não estou imune a nada, provavelmente você irá encontrar algum erro de português ou pior ainda, de código, pois português se algo ainda estiver errado o português &ldquo;funciona&rdquo;, código não.</p>
+<p>Se você já conhece um pouco de CLI (Command Line Interface) de GNU/Linux, provavelmente não terá nenhum problema para utilizar Dockerfile, pois ele é basicamente comando que você já usa.</p>
 
-<p>Deixo abaixo uma lista de onde você pode entrar em contato comigo.</p>
+<p>Aqui está a lista dos comandos que você pode utilizar dentro do seu arquivo. Vamos explicar rapidamente o que cada um faz.</p>
 
 <ul>
-<li>E-mail: <a href="mailto:raffaeldutra@gmail.com?Subject=Contato via Github">raffaeldutra@gmail.com</a><br /></li>
-<li>Site: <a href="http://rafaeldutra.me">http://rafaeldutra.me</a><br /></li>
-<li>Twitter: <a href="https://twitter.com/raffaeldutra">https://twitter.com/raffaeldutra</a><br /></li>
-<li>Slideshare: <a href="https://www.slideshare.net/raffaeldutra">https://www.slideshare.net/raffaeldutra</a><br /></li>
-<li>Google Plus: <a href="https://plus.google.com/+RafaelDutra">https://plus.google.com/+RafaelDutra</a><br /></li>
-<li>Github: <a href="https://github.com/raffaeldutra">https://github.com/raffaeldutra</a></li>
-<li>Linkedin: <a href="https://linkedin.com/in/rafaeldutra">https://linkedin.com/in/rafaeldutra</a></li>
-<li>Youtube: <a href="https://youtube.com/raffaeldutra/watch?v=jXqfY0Nn53Q&list=PLZJThJjvPpHlgV4AjZDstipTZhEuV_OIz">Youtube</a></li>
+<li>FROM - define a imagem base para você iniciar sua nova imagem.</li>
+<li>LABEL - aqui é possível definir algumas informações para melhor organização de suas imagens, você pode usar quantas labels quiser.</li>
+<li>ENV - variáveis de ambiente que serão utilizadas dentro do container quando você invocar a imagem.</li>
+<li>RUN - aqui irão entrar todos os comandos que deseja executar assim que iniciar a buildar sua imagem.</li>
+<li>WORKDIR - de onde serão executados os comandos, este comando é um path apenas.</li>
+<li>VOLUME - possibilita o acesso de um diretório na sua máquina real.</li>
+<li>USER - qual usuário irá executar os comandos dentro da imagem, o padrão é root.</li>
+<li>ADD or COPY - copia arquivos e diretórios de sua máquina local para dentro da imagem.</li>
+<li>EXPOSE - expõe uma porta para ser acessada publicamente, como a porta 80, por exemplo</li>
+<li>CMD - executa um comando assim que você invocar a imagem.</li>
+<li>ENTRYPOINT - parecido com o CMD, mas aqui normalmente você coloca um script para ser iniciado.</li>
 </ul>
 
 
@@ -836,8 +845,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -853,6 +860,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -954,153 +964,6 @@
                     
                     
 
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
             
         
@@ -1186,9 +1049,6 @@
                     
 
                     
-            
-        
-                    
                         
             
             
@@ -1196,35 +1056,6 @@
                     
                         
                         
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -1256,6 +1087,185 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
             
         
         
@@ -1263,10 +1273,10 @@
 
 
         
-            <a class="nav nav-prev" href="/beginner/reference/" title="Referências"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/beginner/commands/limpando-o-que-nao-e-usado/" title="Limpando o que não é usado"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/files/" title="Files" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/beginner/dockerfile/dockerfile/" title="Dockerfile" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

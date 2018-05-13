@@ -9,7 +9,7 @@
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
-    <title>Quem sou eu? :: Documentação Docker</title>
+    <title>Criando sua imagem com Dockerfile :: Documentação Docker</title>
     
     
     <link href="/css/nucleus.css?1526236750" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/whoami/">
+  <body class="" data-url="/beginner/build/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -76,7 +76,7 @@
   
     
     <li data-nav-id="/beginner/" title="Docker Básico" class="dd-item 
-        
+        parent
         
         
         ">
@@ -429,8 +429,8 @@
   
     
     <li data-nav-id="/beginner/build/" title="Criando sua imagem com Dockerfile" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/beginner/build/">
@@ -567,8 +567,8 @@
   
     
     <li data-nav-id="/whoami/" title="Quem sou eu?" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/whoami/">
@@ -730,7 +730,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='' href="https://github.com/raffaeldutra/docker.raffaeldutra.github.iowhoami/_index.md" target="blank">
+                    <a class="github-link" title='' href="https://github.com/raffaeldutra/docker.raffaeldutra.github.iobeginner/build/_index.md" target="blank">
                       <i class="fa fa-code-fork"></i>
                       <span id="top-github-link-text"></span>
                     </a>
@@ -755,7 +755,13 @@
             
           
           
-            <a href='/'></a> > Quem sou eu?
+            
+            
+          
+          
+            <a href='/'></a> > <a href='/beginner/'>Docker Básico</a> > Criando sua imagem com Dockerfile
+          
+         
           
          
           
@@ -777,28 +783,24 @@
         
         <div id="body-inner">
           
-            <h1>Quem sou eu?</h1>
+            <h1>Criando sua imagem com Dockerfile</h1>
           
 
         
 
 
-<p>Olá pessoal me chamo <strong><a href="http://rafaeldutra.me">Rafael Dutra</a></strong>.</p>
+<p>Para criamos nossa imagem, precisamos de um arquivo Dockerfile conforme visto <a href="dockerfile/dockerfile">aqui</a>. Com este arquivo podemos criar nossas próprias imagens de uma forma organizada e automatizada.</p>
 
-<p>Como não estou imune a nada, provavelmente você irá encontrar algum erro de português ou pior ainda, de código, pois português se algo ainda estiver errado o português &ldquo;funciona&rdquo;, código não.</p>
+<p>Para criarmos ela, devemos executar o comando</p>
 
-<p>Deixo abaixo uma lista de onde você pode entrar em contato comigo.</p>
+<pre><code>docker build --tag nomeDaImagemQueDeseja:versao.1 .
+</code></pre>
 
-<ul>
-<li>E-mail: <a href="mailto:raffaeldutra@gmail.com?Subject=Contato via Github">raffaeldutra@gmail.com</a><br /></li>
-<li>Site: <a href="http://rafaeldutra.me">http://rafaeldutra.me</a><br /></li>
-<li>Twitter: <a href="https://twitter.com/raffaeldutra">https://twitter.com/raffaeldutra</a><br /></li>
-<li>Slideshare: <a href="https://www.slideshare.net/raffaeldutra">https://www.slideshare.net/raffaeldutra</a><br /></li>
-<li>Google Plus: <a href="https://plus.google.com/+RafaelDutra">https://plus.google.com/+RafaelDutra</a><br /></li>
-<li>Github: <a href="https://github.com/raffaeldutra">https://github.com/raffaeldutra</a></li>
-<li>Linkedin: <a href="https://linkedin.com/in/rafaeldutra">https://linkedin.com/in/rafaeldutra</a></li>
-<li>Youtube: <a href="https://youtube.com/raffaeldutra/watch?v=jXqfY0Nn53Q&list=PLZJThJjvPpHlgV4AjZDstipTZhEuV_OIz">Youtube</a></li>
-</ul>
+<p>Devemos atentar par duas coisas aqui:</p>
+
+<p>1 - O arquivo Dockerfile deve estar (mas podemos passar parâmetro, mas não vamos discutir isso agora) no mesmo diretório onde você está executando o comando.</p>
+
+<p>2 - Existe sim um . (ponto) final no comando, ele diz de uma maneira simplificada que nosso Dockerfile está neste diretório.</p>
 
 
 <footer class=" footline" >
@@ -836,8 +838,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -854,34 +854,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
                         
-            
-            
-                
                     
                 
                 
@@ -890,137 +864,6 @@
                     
                     
 
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
             
         
@@ -1102,6 +945,170 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1177,7 +1184,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -1194,9 +1200,6 @@
             
                 
                     
-                        
-                        
-                    
                 
                 
 
@@ -1204,22 +1207,6 @@
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -1253,6 +1240,22 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1263,10 +1266,10 @@
 
 
         
-            <a class="nav nav-prev" href="/beginner/reference/" title="Referências"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/beginner/dockerfile/creating-image/" title="Criando nossa imagem utilizando o Dockerfile"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/files/" title="Files" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/beginner/build/creating-without-dockerfile/" title="Criando sua imagem sem Dockerfile" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

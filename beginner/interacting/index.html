@@ -9,7 +9,7 @@
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
-    <title>Quem sou eu? :: Documentação Docker</title>
+    <title>Interagindo com containers :: Documentação Docker</title>
     
     
     <link href="/css/nucleus.css?1526236750" rel="stylesheet">
@@ -34,7 +34,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/whoami/">
+  <body class="" data-url="/beginner/interacting/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -76,7 +76,7 @@
   
     
     <li data-nav-id="/beginner/" title="Docker Básico" class="dd-item 
-        
+        parent
         
         
         ">
@@ -483,7 +483,7 @@
  
   
     
-      <li data-nav-id="/beginner/interacting/" title="Interagindo com containers" class="dd-item ">
+      <li data-nav-id="/beginner/interacting/" title="Interagindo com containers" class="dd-item active">
         <a href="/beginner/interacting/">
         <b>6 </b>Interagindo com containers
         <i class="fa fa-check read-icon"></i>
@@ -567,8 +567,8 @@
   
     
     <li data-nav-id="/whoami/" title="Quem sou eu?" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/whoami/">
@@ -730,7 +730,7 @@
                   
                   
                   <div id="top-github-link">
-                    <a class="github-link" title='' href="https://github.com/raffaeldutra/docker.raffaeldutra.github.iowhoami/_index.md" target="blank">
+                    <a class="github-link" title='' href="https://github.com/raffaeldutra/docker.raffaeldutra.github.iobeginner/interacting.md" target="blank">
                       <i class="fa fa-code-fork"></i>
                       <span id="top-github-link-text"></span>
                     </a>
@@ -755,7 +755,13 @@
             
           
           
-            <a href='/'></a> > Quem sou eu?
+            
+            
+          
+          
+            <a href='/'></a> > <a href='/beginner/'>Docker Básico</a> > Interagindo com containers
+          
+         
           
          
           
@@ -765,7 +771,14 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#outros-comandos-para-interagir-com-seu-container">Outros comandos para interagir com seu container</a></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -777,33 +790,90 @@
         
         <div id="body-inner">
           
-            <h1>Quem sou eu?</h1>
+            <h1>Interagindo com containers</h1>
           
 
         
 
 
-<p>Olá pessoal me chamo <strong><a href="http://rafaeldutra.me">Rafael Dutra</a></strong>.</p>
 
-<p>Como não estou imune a nada, provavelmente você irá encontrar algum erro de português ou pior ainda, de código, pois português se algo ainda estiver errado o português &ldquo;funciona&rdquo;, código não.</p>
 
-<p>Deixo abaixo uma lista de onde você pode entrar em contato comigo.</p>
+<p>Até agora fizemos alguns poucos exemplos, vamos entrar de fato em um container e trabalhar um pouco com ele.</p>
+
+<p>Execute o seguinte comando:</p>
+
+<pre><code>docker run --interactive --tty --publish 45000:80 nginx /bin/bash
+</code></pre>
 
 <ul>
-<li>E-mail: <a href="mailto:raffaeldutra@gmail.com?Subject=Contato via Github">raffaeldutra@gmail.com</a><br /></li>
-<li>Site: <a href="http://rafaeldutra.me">http://rafaeldutra.me</a><br /></li>
-<li>Twitter: <a href="https://twitter.com/raffaeldutra">https://twitter.com/raffaeldutra</a><br /></li>
-<li>Slideshare: <a href="https://www.slideshare.net/raffaeldutra">https://www.slideshare.net/raffaeldutra</a><br /></li>
-<li>Google Plus: <a href="https://plus.google.com/+RafaelDutra">https://plus.google.com/+RafaelDutra</a><br /></li>
-<li>Github: <a href="https://github.com/raffaeldutra">https://github.com/raffaeldutra</a></li>
-<li>Linkedin: <a href="https://linkedin.com/in/rafaeldutra">https://linkedin.com/in/rafaeldutra</a></li>
-<li>Youtube: <a href="https://youtube.com/raffaeldutra/watch?v=jXqfY0Nn53Q&list=PLZJThJjvPpHlgV4AjZDstipTZhEuV_OIz">Youtube</a></li>
+<li>Edite o arquivo <strong>/usr/share/nginx/html/index.html</strong> com o vim</li>
 </ul>
+
+<p>O que aconteceu?</p>
+
+<pre><code>apt-get update &amp;&amp; apt-get install vim --yes
+</code></pre>
+
+<p>Vamos acessar novamente o nosso web server na porta 45000 e percebemos que? Pois então, ao entrarmos dentro de um container, nós &ldquo;perdemos&rdquo; a execução de comando/entrypoint que a imagem foi destinada e para entedemos melhor, vamos ver como esta imagem do <strong>nginx</strong> foi criada. Para isso nós iremos acessar um repositório desta imagem no <a href="https://github.com/nginxinc/docker-nginx">Github</a>.</p>
+
+<p>Docker Hub é um repositório aberto de imagens de onde todas imagens públicas, inclusive esta que estamos usando neste momento, estão sendo utilizadas. Você pode criar sua propria imagem e envia-lá sem problema algum para o Docker Hub, apenas atente para não deixar nenhum tipo de credential &ldquo;boiando&rdquo; por lá.</p>
+
+<p>Vamos então <a href="https://hub.docker.com/_/nginx/">abrir o repositório do Nginx</a> e ver de mais perto o que estamos conversando.</p>
+
+<p>Ao abrirmos o arquivo de como é feita a imagem, percebemos na última que existe um comando chamado <strong>CMD [&ldquo;nginx&rdquo;, &ldquo;-g&rdquo;, &ldquo;daemon off;&rdquo;]</strong>. Este comando nos diz o seguinte em uma tradução livre &ldquo;quando você rodar um novo container eu automaticamente vou invocar o comando nginx -g daemon para você&rdquo;. No nosso caso, acessamos o container de modo que estamos &ldquo;brincando&rdquo; com ele e este comando não foi executado pois ele somente é dispararado quando não passamos um novo parâmetro para ele, que foi o <strong>/bin/bash</strong>.</p>
+
+<p>Dockerfile é este arquivo que estamos acessando neste momento e entendendo sua &ldquo;planta baixa&rdquo; de como funciona sua imagem e que também entraremos para falar somente dele.</p>
+
+<p>Voltamos ao nosso problema inicial. Percebemos que ao entrar no container que está rodando Nginx ele não subiu o serviço e com isso nos vem a pergunta simples, como levantamos o serviço do nginx? simples, digite o comando <strong>nginx</strong> e acesse novamente o endereço <a href="http://localhost:45000">http://localhost:45000</a></p>
+
+<blockquote>
+<p>Trabalhar com containers no início pode ser tão trabalhoso como de fato é :-)</p>
+</blockquote>
+
+<p>Agora acesse novamente <a href="http://localhost:45000">http://localhost:45000</a> e veja sua nova página.</p>
+
+<p>Porém nós podemos fazer algo melhor sem &ldquo;encostar&rdquo; no container, algo interessante como <em>volumes</em> que veremos mais em breve.</p>
+
+<h2 id="outros-comandos-para-interagir-com-seu-container">Outros comandos para interagir com seu container</h2>
+
+<p>Quando iniciamos um container novo, podemos instalar pacotes, editar/apagar/criar arquivos e outras coisas mais, porém temos um problema ao sair do container de forma tradicional pelo terminal pois o container automaticamente será parado assim que você digitar <strong>exit</strong> ou der <strong>control d</strong>. Para resolvermos este problema, podemos utiliazar a combinação de teclas como <strong>control p q</strong>, isso fará com que nosso container continue rodando normalmente e ele não irá parar.</p>
+
+<p>Utilizando este conjunto de teclas, nos vem a seguinte pergunta: &ldquo;E se eu quero retornar ao container, como faço?&rdquo;.</p>
+
+<pre><code>docker attach &lt;id do container&gt; ou &lt;nome&gt;
+</code></pre>
+
+<p>Excelente, tudo funcionando como esperado, mas e se eu quero apenas listar algum arquivo ou quem sabe visualizar e assim por diante? ou seja, quero apenas fazer algo breve no meu container?</p>
+
+<pre><code>docker exec &lt;id do container&gt; ou &lt;nome&gt; ls -la /usr/share/nginx/html
+</code></pre>
+
+<ul>
+<li>Como faço para visualizar o log de um container?</li>
+</ul>
+
+<pre><code>docker logs &lt;id do container&gt; ou &lt;nome&gt;
+</code></pre>
+
+<ul>
+<li>Como faço para visualizar status do meu container?</li>
+</ul>
+
+<pre><code>docker stats &lt;id do container&gt; ou &lt;nome&gt;
+</code></pre>
+
+<ul>
+<li>Como faço para visualizar informações detalhadas de um container?</li>
+</ul>
+
+<pre><code>docker inspect &lt;id do container&gt; ou &lt;nome&gt;
+</code></pre>
 
 
 <footer class=" footline" >
 	
 </footer>
+
 
         
         </div> 
@@ -836,8 +906,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -854,34 +922,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
                         
-            
-            
-                
                     
                 
                 
@@ -890,137 +932,6 @@
                     
                     
 
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
             
         
@@ -1102,9 +1013,6 @@
             
         
                     
-            
-        
-                    
                         
             
             
@@ -1169,42 +1077,6 @@
             
         
                     
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
                         
             
             
@@ -1220,6 +1092,22 @@
                     
             
         
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
                     
                         
             
@@ -1256,6 +1144,189 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
             
         
         
@@ -1263,10 +1334,10 @@
 
 
         
-            <a class="nav nav-prev" href="/beginner/reference/" title="Referências"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/beginner/build/creating-without-dockerfile/" title="Criando sua imagem sem Dockerfile"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/files/" title="Files" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/beginner/volumes/" title="Volumes" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
@@ -1296,3 +1367,4 @@
 
   </body>
 </html>
+

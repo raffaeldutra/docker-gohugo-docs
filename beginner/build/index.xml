@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Criando sua imagem com Dockerfile on Documentação Docker</title>
+    <link>https://docker.rafaeldutra.me/beginner/build/</link>
+    <description>Recent content in Criando sua imagem com Dockerfile on Documentação Docker</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    
+	<atom:link href="https://docker.rafaeldutra.me/beginner/build/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Criando sua imagem sem Dockerfile</title>
+      <link>https://docker.rafaeldutra.me/beginner/build/creating-without-dockerfile/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docker.rafaeldutra.me/beginner/build/creating-without-dockerfile/</guid>
+      <description>Sim, nós também podemos criar imagens sem precisar de Dockerfile. Vamos ver o seguinte:
+docker run --interactive --tty ubuntu /bin/bash  Com este comando nós &amp;ldquo;entramos&amp;rdquo; no container. Dentro do container podemos fazer o que quisermos, como adicionar arquivos, remover arquivos, adicionar pacotes e etc.
+Vamos então adicionar um pacote. No container, execute:
+apt-get update &amp;amp;&amp;amp; apt-get install curl  </description>
+    </item>
+    
+  </channel>
+</rss>

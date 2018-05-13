@@ -3,63 +3,91 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://docker.rafaeldutra.me/basics/installing/</loc>
+    <loc>https://docker.rafaeldutra.me/beginner/docker/</loc>
   </url>
   
   <url>
-    <loc>https://docker.rafaeldutra.me/basics/b%C3%A1sico/</loc>
+    <loc>https://docker.rafaeldutra.me/beginner/</loc>
   </url>
   
   <url>
-    <loc>https://docker.rafaeldutra.me/basics/</loc>
+    <loc>https://docker.rafaeldutra.me/beginner/installing/</loc>
   </url>
   
   <url>
-    <loc>https://docker.rafaeldutra.me/basics/dockerfile/</loc>
+    <loc>https://docker.rafaeldutra.me/beginner/commands/</loc>
   </url>
   
   <url>
-    <loc>https://docker.rafaeldutra.me/basics/dockerfile/dockerfile/</loc>
+    <loc>https://docker.rafaeldutra.me/beginner/installing/way1/</loc>
   </url>
   
   <url>
-    <loc>https://docker.rafaeldutra.me/basics/dockerfile/creating-image/</loc>
+    <loc>https://docker.rafaeldutra.me/beginner/commands/commands/</loc>
   </url>
   
   <url>
-    <loc>https://docker.rafaeldutra.me/basics/build/</loc>
+    <loc>https://docker.rafaeldutra.me/beginner/dockerfile/</loc>
   </url>
   
   <url>
-    <loc>https://docker.rafaeldutra.me/basics/build/creating-without-dockerfile/</loc>
+    <loc>https://docker.rafaeldutra.me/beginner/dockerfile/dockerfile/</loc>
   </url>
   
   <url>
-    <loc>https://docker.rafaeldutra.me/basics/interacting/</loc>
+    <loc>https://docker.rafaeldutra.me/beginner/dockerfile/creating-image/</loc>
   </url>
   
   <url>
-    <loc>https://docker.rafaeldutra.me/basics/installing/way1/</loc>
+    <loc>https://docker.rafaeldutra.me/beginner/installing/way2/</loc>
   </url>
   
   <url>
-    <loc>https://docker.rafaeldutra.me/basics/installing/way2/</loc>
+    <loc>https://docker.rafaeldutra.me/beginner/commands/rodando-container/</loc>
   </url>
   
   <url>
-    <loc>https://docker.rafaeldutra.me/basics/volumes/</loc>
+    <loc>https://docker.rafaeldutra.me/beginner/build/</loc>
   </url>
   
   <url>
-    <loc>https://docker.rafaeldutra.me/basics/docker-compose/</loc>
+    <loc>https://docker.rafaeldutra.me/beginner/build/creating-without-dockerfile/</loc>
   </url>
   
   <url>
-    <loc>https://docker.rafaeldutra.me/basics/reference/</loc>
+    <loc>https://docker.rafaeldutra.me/beginner/commands/utilizando-imagens/</loc>
   </url>
   
   <url>
-    <loc>https://docker.rafaeldutra.me/whoami/_index.php/</loc>
+    <loc>https://docker.rafaeldutra.me/beginner/commands/gerenciando-containers/</loc>
+  </url>
+  
+  <url>
+    <loc>https://docker.rafaeldutra.me/beginner/interacting/</loc>
+  </url>
+  
+  <url>
+    <loc>https://docker.rafaeldutra.me/beginner/commands/manipulando-containers/</loc>
+  </url>
+  
+  <url>
+    <loc>https://docker.rafaeldutra.me/beginner/volumes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://docker.rafaeldutra.me/beginner/docker-compose/</loc>
+  </url>
+  
+  <url>
+    <loc>https://docker.rafaeldutra.me/beginner/commands/limpando-o-que-nao-e-usado/</loc>
+  </url>
+  
+  <url>
+    <loc>https://docker.rafaeldutra.me/beginner/reference/</loc>
+  </url>
+  
+  <url>
+    <loc>https://docker.rafaeldutra.me/whoami/</loc>
   </url>
   
   <url>
@@ -90,11 +118,6 @@
   
   <url>
     <loc>https://docker.rafaeldutra.me/tags/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://docker.rafaeldutra.me/whoami/</loc>
     <priority>0</priority>
   </url>
   
