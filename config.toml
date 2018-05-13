@@ -26,7 +26,7 @@ languageName = "Português"
 [[Languages.ptbr.menu.shortcuts]]
 name = "<i class='fa fa-fw fa-github'></i> Github repo"
 identifier = "ds"
-url = "https://github.com/raffaeldutra/docker.raffaeldutra.github.iolearn"
+url = "https://github.com/raffaeldutra/docker.raffaeldutra.github.io"
 weight = 10
 
 [[Languages.ptbr.menu.shortcuts]]
