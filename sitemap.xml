@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>localhost:1313/basics/installing/</loc>
+  </url>
+  
+  <url>
+    <loc>localhost:1313/basics/b%C3%A1sico/</loc>
+  </url>
+  
+  <url>
+    <loc>localhost:1313/basics/</loc>
+  </url>
+  
+  <url>
+    <loc>localhost:1313/basics/dockerfile/</loc>
+  </url>
+  
+  <url>
+    <loc>localhost:1313/basics/build/</loc>
+  </url>
+  
+  <url>
+    <loc>localhost:1313/basics/interacting/</loc>
+  </url>
+  
+  <url>
+    <loc>localhost:1313/basics/volumes/</loc>
+  </url>
+  
+  <url>
+    <loc>localhost:1313/basics/docker-compose/</loc>
+  </url>
+  
+  <url>
+    <loc>localhost:1313/basics/installing/way1/</loc>
+  </url>
+  
+  <url>
+    <loc>localhost:1313/basics/installing/way2/</loc>
+  </url>
+  
+  <url>
+    <loc>localhost:1313/basics/reference/</loc>
+  </url>
+  
+  <url>
+    <loc>localhost:1313/whoami/</loc>
+  </url>
+  
+  <url>
+    <loc>localhost:1313/</loc>
+  </url>
+  
+  <url>
+    <loc>localhost:1313/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>localhost:1313/files/wordpress/docker-compose.yml/</loc>
+  </url>
+  
+  <url>
+    <loc>localhost:1313/files/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>localhost:1313/files/nginx/dockerfile/</loc>
+  </url>
+  
+  <url>
+    <loc>localhost:1313/files/php/dockerfile/</loc>
+  </url>
+  
+  <url>
+    <loc>localhost:1313/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
