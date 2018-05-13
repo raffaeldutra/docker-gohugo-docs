@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="ptbr" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.26" />
+    <meta name="description" content="Documentação Docker">
+<meta name="author" content="Rafael Dutra">
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link rel="icon" href="/images/favicon.png" type="image/x-icon" />
+    <title>Básico :: Documentação Docker</title>
+    
+    
+    <link href="/css/nucleus.css?1526187484" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1526187484" rel="stylesheet">
+    <link href="/css/hybrid.css?1526187484" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1526187484" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1526187484" rel="stylesheet">
+    <link href="/css/auto-complete.css?1526187484" rel="stylesheet">
+    <link href="/css/theme.css?1526187484" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1526187484" rel="stylesheet">
+    
+      <link href="/css/theme-green.css?1526187484" rel="stylesheet">
+    
+
+    <script src="/js/jquery-2.x.min.js?1526187484"></script>
+    
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{ 
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/basics/b%C3%A1sico/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      
+<img src="https://cdn.icon-icons.com/icons2/338/PNG/128/Containers_35594.png"></img>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fa fa-search"></i></label>
+    <input data-search-input id="search-by" type="text" placeholder="">
+    <span data-search-clear=""><i class="fa fa-close"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1526187484"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1526187484"></script>
+<script type="text/javascript">
+    
+        var baseurl = '\/';
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1526187484"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/basics/" title="Docker Básico" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/basics/">
+          <b>1 </b>Docker Básico
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/basics/installing/" title="Instalando" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/basics/installing/">
+          <b>1.1 </b>Instalando
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/installing/way1/" title="A maneira Linux simples de ser" class="dd-item ">
+        <a href="/basics/installing/way1/">
+        <b>1.1.1 </b>A maneira Linux simples de ser
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/installing/way2/" title="Forma tradicional" class="dd-item ">
+        <a href="/basics/installing/way2/">
+        <b>1.1.2 </b>Forma tradicional
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/b%C3%A1sico/" title="Básico" class="dd-item active">
+        <a href="/basics/b%C3%A1sico/">
+        <b>1.2 </b>Básico
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/dockerfile/" title="Dockerfile" class="dd-item ">
+        <a href="/basics/dockerfile/">
+        <b>1.3 </b>Dockerfile
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/build/" title="Criando sua imagem usando Dockerfile" class="dd-item ">
+        <a href="/basics/build/">
+        <b>1.4 </b>Criando sua imagem usando Dockerfile
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/interacting/" title="Interagindo com containers" class="dd-item ">
+        <a href="/basics/interacting/">
+        <b>1.5 </b>Interagindo com containers
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/volumes/" title="Volumes" class="dd-item ">
+        <a href="/basics/volumes/">
+        <b>1.5 </b>Volumes
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/docker-compose/" title="Docker Compose" class="dd-item ">
+        <a href="/basics/docker-compose/">
+        <b>1.6 </b>Docker Compose
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/basics/reference/" title="Referências" class="dd-item ">
+        <a href="/basics/reference/">
+        Referências
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/whoami/" title="Quem sou eu?" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/whoami/">
+          Quem sou eu?
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/files/" title="Files" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/files/">
+          Files
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/files/wordpress/docker-compose.yml/" title="Docker Compose" class="dd-item ">
+        <a href="/files/wordpress/docker-compose.yml/">
+        Docker Compose
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/files/nginx/dockerfile/" title="Nginx Dockerfile" class="dd-item ">
+        <a href="/files/nginx/dockerfile/">
+        Nginx Dockerfile
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/files/php/dockerfile/" title="PHP CLI Dockerfile" class="dd-item ">
+        <a href="/files/php/dockerfile/">
+        PHP CLI Dockerfile
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3></h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/raffaeldutra/docker.raffaeldutra.github.iolearn"><i class='fa fa-fw fa-github'></i> Github repo</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://gohugo.io/"><i class='fa fa-fw fa-bookmark'></i> Hugo Documentation</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+       
+      
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fa fa-fw fa-history"></i> </a></li>         
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fa fa-heart"></i></a> from <a href="http://getgrav.org">Grav</a> and <a href="http://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='' href="https://github.com/raffaeldutra/docker.raffaeldutra.github.iobasics/b%c3%a1sico.md" target="blank">
+                      <i class="fa fa-code-fork"></i>
+                      <span id="top-github-link-text"></span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'></a> > <a href='/basics/'>Docker Básico</a> > Básico
+          
+         
+          
+         
+          
+           
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li><a href="#comandos">Comandos</a>
+<ul>
+<li><a href="#rodando-um-container">Rodando um container</a></li>
+<li><a href="#utilizando-imagens">Utilizando imagens</a></li>
+<li><a href="#gerenciando-os-containers">Gerenciando os containers</a></li>
+<li><a href="#manipulando-containers">Manipulando containers</a></li>
+<li><a href="#limpando-o-que-não-é-usado">Limpando o que não é usado</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+
+        
+        <div id="body-inner">
+          
+            <h1>Básico</h1>
+          
+
+        
+
+
+
+
+<p>Verifique se está com docker corretamente funcionando, para isso execute o comando:</p>
+
+<pre><code>docker version
+</code></pre>
+
+<p>Sua saída deve ser algo parecido com:</p>
+
+<pre><code>rafael @ nazgul ~
+└─ $ ▶ docker version
+Client:
+ Version:	17.12.0-ce
+ API version:	1.35
+ Go version:	go1.9.2
+ Git commit:	c97c6d6
+ Built:	Wed Dec 27 20:03:51 2017
+ OS/Arch:	darwin/amd64
+
+Server:
+ Engine:
+  Version:	17.12.0-ce
+  API version:	1.35 (minimum version 1.12)
+  Go version:	go1.9.2
+  Git commit:	c97c6d6
+  Built:	Wed Dec 27 20:12:29 2017
+  OS/Arch:	linux/amd64
+  Experimental:	true
+</code></pre>
+
+<h1 id="comandos">Comandos</h1>
+
+<p>Para verificar todos os comandos proporcionados por Docker, simplesmente digite:</p>
+
+<pre><code>docker
+</code></pre>
+
+<p>Importante: não esqueça que a linha de comando (CLI) é sua melhor amiga, caso não souber como um comando continua, ou seja, opções deste comando, simplesmente digite:</p>
+
+<pre><code>docker &lt;comando&gt; --help
+</code></pre>
+
+<h2 id="rodando-um-container">Rodando um container</h2>
+
+<pre><code>docker run alpine hostname
+</code></pre>
+
+<p>Você provavelmente teve uma resposta com letras e números, algo como: <em>7ed46aef747a</em>.<br />
+O que acabamos de ver aqui é o nome do container no momento que você o executou.</p>
+
+<p>Vamos explicar por partes o que o comando acima faz:</p>
+
+<ul>
+<li><strong>docker run</strong> executa um container</li>
+<li><strong>alpine</strong> é o nome da imagem que estamos Utilizando</li>
+<li><strong>hostname</strong> é o comando que é executado dentro do container, por isso obtemos aquele conjunto de números e letras como resposta quando executamos o comando.</li>
+</ul>
+
+<p>O que iremos ver agora é:</p>
+
+<ul>
+<li>Executando o comando acima algumas vezes, o resultado mudou?</li>
+</ul>
+
+<h2 id="utilizando-imagens">Utilizando imagens</h2>
+
+<p>Tudo que iremos executar em um container, vem de uma imagem e essa imagem pode ser uma que você mesmo criou ou uma imagem oficial, como foi o nosso caso acima como o Alpine.</p>
+
+<blockquote>
+<p>Apenas por conhecimento, Alpine é uma distribuição Linux super pequena que neste exato momento em sua versão 3.7.0 tem uma iso de 130MB e o mesmo vale para sua imagem para container, acredite, são 4.5MB de tamanho.</p>
+</blockquote>
+
+<p>Execute o comando:</p>
+
+<pre><code>docker images
+</code></pre>
+
+<p>E o resultado deve ser algo assim:</p>
+
+<pre><code>rafael @ nazgul ~
+└─ $ ▶ docker images
+REPOSITORY                          TAG                    IMAGE ID            CREATED             SIZE
+golang                              1.10.0-alpine3.7       85256d3905e2        7 weeks ago         376MB
+maven                               3.5.2-jdk-8            31eec910d005        7 weeks ago         748MB
+ubuntu                              16.04                  0458a4468cbc        2 months ago        112MB
+ubuntu                              latest                 0458a4468cbc        2 months ago        112MB
+raffaeldutra/gohugo                 latest                 7d6cac06f35c        2 months ago        1.11GB
+golang                              latest                 3858fd70eed2        2 months ago        735MB
+python                              2.7-alpine             0781c116c406        2 months ago        72.4MB
+python                              3.6.4-alpine3.7        4b00a94b6f26        2 months ago        83.4MB
+alpine                              3.4                    c7fc7faf8c28        3 months ago        4.82MB
+alpine                              latest                 3fd9065eaf02        3 months ago        4.15MB
+nginx                               latest                 3f8a4339aadd        3 months ago        108MB
+jenkins                             latest                 5fc84ab0b7ad        3 months ago        809MB
+jenkins                             2.60.3-alpine          2ad007d33253        5 months ago        223MB
+maven                               3.5.2-jdk-8-alpine     293423a981a7        5 months ago        116MB
+java                                openjdk-8-jdk-alpine   3fd9dd82815c        13 months ago       145MB
+java                                8u102-jre              13f413e924a3        17 months ago       309MB
+</code></pre>
+
+<p>O que iremos ver agora é:</p>
+
+<ul>
+<li>Como procurar uma imagem?</li>
+</ul>
+
+<pre><code>docker search &lt;imagem&gt;
+</code></pre>
+
+<ul>
+<li>Como remover uma imagem?</li>
+</ul>
+
+<pre><code>docker rmi alpine
+</code></pre>
+
+<blockquote>
+<p>Aqui iremos obter um erro, pois temos aquele primeiro container &ndash; docker run alpine hostname &ndash; em funcionamento e não é possível remover uma imagem onde há containers rodando.</p>
+</blockquote>
+
+<ul>
+<li>Como saber se a imagem que vou utilizar é uma imagem oficial?</li>
+</ul>
+
+<pre><code>docker search ubuntu
+</code></pre>
+
+<ul>
+<li>Como baixamos uma imagem?</li>
+</ul>
+
+<pre><code>docker pull ubuntu
+</code></pre>
+
+<p>e para baixarmos uma versão específica, como Ubuntu 18.04? Para isso passe após o : a versão que quer utilizar</p>
+
+<pre><code>docker pull ubuntu:18.04
+</code></pre>
+
+<h2 id="gerenciando-os-containers">Gerenciando os containers</h2>
+
+<p>Para podermos utilizar os comandos de stop e start, por exemplo, precisamos ter um container que de fato esta parado ou rodando, certo? então agora vamos rodar um container um pouco mais &ldquo;complexo&rdquo;.</p>
+
+<blockquote>
+<p>Atenção, localhost é para máquinas que estão com Docker rodando diretamente no &ldquo;bare metal&rdquo;, se estiver utilizando VM acesse o IP desta VM, algo como 192.168.25.100 - 10.100.111.222</p>
+</blockquote>
+
+<p>Abra um browser e acesse <a href="http://localhost:45000">http://localhost:45000</a> e a página não foi localizada, certo?</p>
+
+<p>Execute o seguinte comando:</p>
+
+<pre><code>docker run --detach --publish 45000:80 nginx
+</code></pre>
+
+<p>Agora abra novamente o endereço <a href="http://localhost:45000">http://localhost:45000</a> - Magic!</p>
+
+<p>Certo, agora temos um servidor web funcionando com apenas um comando na porta 45000 e com isso em funcionamento podemos utilizar os comandos de stop e start.</p>
+
+<p>Vamos parar o container:</p>
+
+<pre><code>docker container stop &lt;id do container&gt;
+</code></pre>
+
+<p>Acesse novamente o seu browser e tente acessar a porta 45000.</p>
+
+<p>Vamos subir novamente o container com o comando:</p>
+
+<pre><code>docker container start &lt;id do container&gt;
+</code></pre>
+
+<h2 id="manipulando-containers">Manipulando containers</h2>
+
+<p>O comando que executamos incialmente <em>docker run alpine hostname</em> é o mais básico possível para termos um container em &ldquo;funcionamento&rdquo;. O &ldquo;funcionamento&rdquo; entre aspas é o que iremos discutir neste momento.</p>
+
+<p>Antes tentamos remover a imagem <em>alpine</em> e obtivemos um erro, mas o que causou o erro? Foi devido que o container está rodando. Então como sabemos se um container está rodando? ou melhor, como sabemos o &ldquo;status&rdquo; de um container?</p>
+
+<p>Utilize o comando:</p>
+
+<pre><code>docker container &lt;comando&gt;
+</code></pre>
+
+<ul>
+<li>Queremos listar containers?</li>
+</ul>
+
+<pre><code>docker container ls
+</code></pre>
+
+<ul>
+<li>Queremos parar?</li>
+</ul>
+
+<pre><code>docker container stop &lt;nome do container&gt; ou &lt;id do container&gt;
+</code></pre>
+
+<ul>
+<li>Queremos iniciar?</li>
+</ul>
+
+<pre><code>docker container start &lt;nome do container&gt; ou &lt;id do container&gt;
+</code></pre>
+
+<p>Para a lista de comandos que podemos utilizar, simplesmente execute:</p>
+
+<pre><code>docker container
+</code></pre>
+
+<h2 id="limpando-o-que-não-é-usado">Limpando o que não é usado</h2>
+
+<p>Você irá notar que depois de muitos comandos para lá e para cá, muitas coisas ficaram para trás, como containers parados, imagens não &ldquo;funcionais&rdquo; e etc. Para limparmos essa bagunça, execute o comando abaixo:</p>
+
+<pre><code>docker system prune
+</code></pre>
+
+<p>Você irá receber algo do tipo:</p>
+
+<pre><code>rafael @ nazgul ~
+└─ $ ▶ docker system prune
+WARNING! This will remove:
+        - all stopped containers
+        - all networks not used by at least one container
+        - all dangling images
+        - all build cache
+Are you sure you want to continue? [y/N] y
+Deleted Containers:
+7ed46aef747a7726285ecde46f7fbcd37fb932e1d106a5552a5ec6205cb45f2f
+847d0f4d36f2b295804778ea69d33e3f9e4fbaf968fec9c244126955aba50e9b
+a47ad7b67d69698896b290f6daf7e4f65760a38a15a2ba10ed87e3d33ecc1032
+dfcbe65a5ae70c204abec0f8a224d1373804c64a927ada38f09d773aca29020d
+62126d53d79232d6bd687a68990e5ef05b5e9e3f8e678286994e2370e9c6faed
+b9427ac05e95b6a7256dec9d53578ed1d05c6792333917e69be5f71e074a5a50
+076a96cd455ad7d7a97d2756b8bd1768aa474fccb7c73022fc94aa013ff0a274
+afdf2d8219b5917ba9e110657e0364d7c9f407e1871631669912b626bf6033a8
+498da065d6e5f19e27828336a9c0a72dcce284de7ccf21e469266fb8a67a7e3d
+a5dadf4de7549d7923aa9a00b5851813efd8ac7f1dd2410397865bc64955af57
+365ae9546d039aba3e8df2abc5132310e2ec67f54bc20e0ac6c2e5b35e55052a
+5c0e6625bda621820dc18479231a7018d7c11dd6fa933c0c4842e575041a34a0
+f0e9646730cd1bd8360e2fa2a71c8bfb3910968047acffe01f772c88f75b940e
+
+Deleted Images:
+deleted: sha256:2d92e5d5adbe5e207b36d93bd14d8b75919d4a118c86f4b137a9c46481b98fef
+deleted: sha256:8ae3118b00c274114fd91dc96628b845e0ff4722717bfdf343c2207bad1ec01f
+
+Total reclaimed space: 70.62MB
+</code></pre>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+        
+            <a class="nav nav-prev" href="/basics/installing/way2/" title="Forma tradicional"> <i class="fa fa-chevron-left"></i></a>
+        
+        
+            <a class="nav nav-next" href="/basics/dockerfile/" title="Dockerfile" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1526187484"></script>
+    <script src="/js/perfect-scrollbar.min.js?1526187484"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1526187484"></script>
+    <script src="/js/jquery.sticky.js?1526187484"></script>
+    <script src="/js/featherlight.min.js?1526187484"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1526187484"></script>
+    <script src="/js/highlight.pack.js?1526187484"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom.71422.js?1526187484"></script>
+    <script src="/js/learn.js?1526187484"></script>
+    <script src="/js/hugo-learn.js?1526187484"></script>
+
+    <link href="/mermaid/mermaid.css?1526187484" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1526187484"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+
