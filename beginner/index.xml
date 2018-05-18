@@ -23,16 +23,6 @@ apt-get update &amp;amp;&amp;amp; apt-get install vim --yes  Vamos acessar novam
     </item>
     
     <item>
-      <title>Volumes</title>
-      <link>https://docker.rafaeldutra.me/beginner/volumes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://docker.rafaeldutra.me/beginner/volumes/</guid>
-      <description>Storage drivers Antes de iniciarmos com volumes, é realmente importante entedermos um pouco como funcionam as imagens, pois como foi dito em algum momento, um container só existe se houver uma imagem (em uma forma resumida).
-Storage driver permitem que você crie dados em uma camada de escrita/gravação do seu container. O importante aqui neste momento é: quando contianer parar, nenhum dado será persistifo &amp;ndash; leia-se gravado em disco.</description>
-    </item>
-    
-    <item>
       <title>Docker Compose</title>
       <link>https://docker.rafaeldutra.me/beginner/docker-compose/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
