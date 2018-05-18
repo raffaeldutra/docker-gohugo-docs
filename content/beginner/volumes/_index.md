@@ -36,6 +36,7 @@ Essas camandas (layers) são empilhadas uma em cima ds outras e quando você ini
 Vejamos esta imagem abaixo:
 
 ![https://docs.docker.com/storage/storagedriver/images/container-layers.jpg](images/container-layers.jpg)
+
 > Imagem retirada da documentação oficial: [https://docs.docker.com/storage/storagedriver/images/container-layers.jpg](https://docs.docker.com/storage/storagedriver/images/container-layers.jpg)
 
 <a name="containers-and-layers"></a>
