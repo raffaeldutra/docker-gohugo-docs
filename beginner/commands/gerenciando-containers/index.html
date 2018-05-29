@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="ptbr" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.40.3" />
+    <meta name="description" content="Documentação Docker">
+<meta name="author" content="Rafael Dutra">
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link rel="icon" href="/images/favicon.png" type="image/x-icon" />
+    <title>Gerenciando os containers :: Documentação Docker</title>
+    
+    
+    <link href="/css/nucleus.css?1527567012" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1527567012" rel="stylesheet">
+    <link href="/css/hybrid.css?1527567012" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1527567012" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1527567012" rel="stylesheet">
+    <link href="/css/auto-complete.css?1527567012" rel="stylesheet">
+    <link href="/css/theme.css?1527567012" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1527567012" rel="stylesheet">
+    
+      <link href="/css/theme-green.css?1527567012" rel="stylesheet">
+    
+
+    <script src="/js/jquery-2.x.min.js?1527567012"></script>
+    
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{ 
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/beginner/commands/gerenciando-containers/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      
+<img src="https://cdn.icon-icons.com/icons2/338/PNG/128/Containers_35594.png"></img>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fa fa-search"></i></label>
+    <input data-search-input id="search-by" type="text" placeholder="">
+    <span data-search-clear=""><i class="fa fa-close"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1527567012"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1527567012"></script>
+<script type="text/javascript">
+    
+        var baseurl = '\/';
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1527567012"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/beginner/" title="Docker Básico" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/beginner/">
+          Docker Básico
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/beginner/docker/" title="Por que usar Docker ?" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/beginner/docker/">
+          <b>1 </b>Por que usar Docker ?
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/beginner/installing/" title="Instalando" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/beginner/installing/">
+          <b>2 </b>Instalando
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/beginner/installing/way1/" title="A maneira Linux simples de ser" class="dd-item ">
+        <a href="/beginner/installing/way1/">
+        <b>2.1 </b>A maneira Linux simples de ser
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/beginner/installing/way2/" title="Forma tradicional" class="dd-item ">
+        <a href="/beginner/installing/way2/">
+        <b>2.2 </b>Forma tradicional
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/beginner/commands/" title="Rodando containers" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/beginner/commands/">
+          <b>3 </b>Rodando containers
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/beginner/commands/comandos/" title="Comandos" class="dd-item ">
+        <a href="/beginner/commands/comandos/">
+        <b>3.1 </b>Comandos
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/beginner/commands/rodando-container/" title="Rodando um container" class="dd-item ">
+        <a href="/beginner/commands/rodando-container/">
+        <b>3.2 </b>Rodando um container
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/beginner/commands/utilizando-imagens/" title="Utilizando imagens" class="dd-item ">
+        <a href="/beginner/commands/utilizando-imagens/">
+        <b>3.3 </b>Utilizando imagens
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/beginner/commands/gerenciando-containers/" title="Gerenciando os containers" class="dd-item active">
+        <a href="/beginner/commands/gerenciando-containers/">
+        <b>3.4 </b>Gerenciando os containers
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/beginner/commands/manipulando-containers/" title="Manipulando containers" class="dd-item ">
+        <a href="/beginner/commands/manipulando-containers/">
+        <b>3.5 </b>Manipulando containers
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/beginner/commands/limpando-o-que-nao-e-usado/" title="Limpando o que não é usado" class="dd-item ">
+        <a href="/beginner/commands/limpando-o-que-nao-e-usado/">
+        <b>3.6 </b>Limpando o que não é usado
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/beginner/dockerfile/" title="Dockerfile" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/beginner/dockerfile/">
+          <b>4 </b>Dockerfile
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/beginner/dockerfile/dockerfile/" title="Dockerfile" class="dd-item ">
+        <a href="/beginner/dockerfile/dockerfile/">
+        <b>4.1 </b>Dockerfile
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/beginner/dockerfile/creating-image/" title="Criando nossa imagem utilizando o Dockerfile" class="dd-item ">
+        <a href="/beginner/dockerfile/creating-image/">
+        <b>4.2 </b>Criando nossa imagem utilizando o Dockerfile
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/beginner/build/" title="Criando sua imagem com Dockerfile" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/beginner/build/">
+          <b>5 </b>Criando sua imagem com Dockerfile
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/beginner/build/criando-imagens-sem-dockerfile/" title="Criando sua imagem sem Dockerfile" class="dd-item ">
+        <a href="/beginner/build/criando-imagens-sem-dockerfile/">
+        <b>5.1 </b>Criando sua imagem sem Dockerfile
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/beginner/interacting/" title="Interagindo com containers" class="dd-item ">
+        <a href="/beginner/interacting/">
+        <b>6 </b>Interagindo com containers
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/beginner/volumes/" title="Volumes" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/beginner/volumes/">
+          <b>7 </b>Volumes
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/beginner/docker-compose/" title="Docker Compose" class="dd-item ">
+        <a href="/beginner/docker-compose/">
+        <b>8 </b>Docker Compose
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/beginner/reference/" title="Referências" class="dd-item ">
+        <a href="/beginner/reference/">
+        Referências
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/whoami/" title="Quem sou eu?" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/whoami/">
+          Quem sou eu?
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/files/" title="Files" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/files/">
+          Files
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/files/wordpress/docker-compose.yml/" title="Docker Compose" class="dd-item ">
+        <a href="/files/wordpress/docker-compose.yml/">
+        Docker Compose
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/files/nginx/dockerfile/" title="Nginx Dockerfile" class="dd-item ">
+        <a href="/files/nginx/dockerfile/">
+        Nginx Dockerfile
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/files/php/dockerfile/" title="PHP CLI Dockerfile" class="dd-item ">
+        <a href="/files/php/dockerfile/">
+        PHP CLI Dockerfile
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3></h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/raffaeldutra/docker.raffaeldutra.github.io"><i class='fa fa-fw fa-github'></i> Github repo</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://gohugo.io/"><i class='fa fa-fw fa-bookmark'></i> Hugo Documentation</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+       
+      
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fa fa-fw fa-history"></i> </a></li>         
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fa fa-heart"></i></a> from <a href="http://getgrav.org">Grav</a> and <a href="http://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='' href="https://github.com/raffaeldutra/docker.raffaeldutra.github.iobeginner/commands/gerenciando-containers.md" target="blank">
+                      <i class="fa fa-code-fork"></i>
+                      <span id="top-github-link-text"></span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'></a> > <a href='/beginner/'>Docker Básico</a> > <a href='/beginner/commands/'>Rodando containers</a> > Gerenciando os containers
+          
+         
+          
+         
+          
+         
+          
+           
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+
+        
+        <div id="body-inner">
+          
+            <h1>Gerenciando os containers</h1>
+          
+
+        
+
+
+<p>Para podermos utilizar os comandos de stop e start, por exemplo, precisamos ter um container que de fato esta parado ou rodando, certo? então agora vamos rodar um container um pouco mais &ldquo;complexo&rdquo;.</p>
+
+<blockquote>
+<p>Atenção, localhost é para máquinas que estão com Docker rodando diretamente no &ldquo;bare metal&rdquo;, se estiver utilizando VM acesse o IP desta VM, algo como 192.168.25.100 - 10.100.111.222</p>
+</blockquote>
+
+<p>Abra um browser e acesse <a href="http://localhost:45000">http://localhost:45000</a> e a página não foi localizada, certo?</p>
+
+<p>Execute o seguinte comando:</p>
+
+<pre><code>docker run --detach --publish 45000:80 nginx
+</code></pre>
+
+<p>Agora abra novamente o endereço <a href="http://localhost:45000">http://localhost:45000</a> - Magic!</p>
+
+<p>Certo, agora temos um servidor web funcionando com apenas um comando na porta 45000 e com isso em funcionamento podemos utilizar os comandos de stop e start.</p>
+
+<p>Vamos parar o container:</p>
+
+<pre><code>docker container stop &lt;id do container&gt;
+</code></pre>
+
+<p>Acesse novamente o seu browser e tente acessar a porta 45000.</p>
+
+<p>Vamos subir novamente o container com o comando:</p>
+
+<pre><code>docker container start &lt;id do container&gt;
+</code></pre>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+        
+            <a class="nav nav-prev" href="/beginner/commands/utilizando-imagens/" title="Utilizando imagens"> <i class="fa fa-chevron-left"></i></a>
+        
+        
+            <a class="nav nav-next" href="/beginner/commands/manipulando-containers/" title="Manipulando containers" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1527567012"></script>
+    <script src="/js/perfect-scrollbar.min.js?1527567012"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1527567012"></script>
+    <script src="/js/jquery.sticky.js?1527567012"></script>
+    <script src="/js/featherlight.min.js?1527567012"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1527567012"></script>
+    <script src="/js/highlight.pack.js?1527567012"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom.71422.js?1527567012"></script>
+    <script src="/js/learn.js?1527567012"></script>
+    <script src="/js/hugo-learn.js?1527567012"></script>
+
+    <link href="/mermaid/mermaid.css?1527567012" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1527567012"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker Básico on Documentação Docker</title>
+    <link>https://docker.rafaeldutra.me/beginner/</link>
+    <description>Recent content in Docker Básico on Documentação Docker</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    
+	<atom:link href="https://docker.rafaeldutra.me/beginner/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Interagindo com containers</title>
+      <link>https://docker.rafaeldutra.me/beginner/interacting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docker.rafaeldutra.me/beginner/interacting/</guid>
+      <description>Até agora fizemos alguns poucos exemplos, vamos entrar de fato em um container e trabalhar um pouco com ele.
+Execute o seguinte comando:
+docker run --interactive --tty --publish 45000:80 nginx /bin/bash   Edite o arquivo /usr/share/nginx/html/index.html com o vim  O que aconteceu?
+apt-get update &amp;amp;&amp;amp; apt-get install vim --yes  Vamos acessar novamente o nosso web server na porta 45000 e percebemos que? Pois então, ao entrarmos dentro de um container, nós &amp;ldquo;perdemos&amp;rdquo; a execução de comando/entrypoint que a imagem foi destinada e para entedemos melhor, vamos ver como esta imagem do nginx foi criada.</description>
+    </item>
+    
+    <item>
+      <title>Docker Compose</title>
+      <link>https://docker.rafaeldutra.me/beginner/docker-compose/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docker.rafaeldutra.me/beginner/docker-compose/</guid>
+      <description>Docker Compose é a maneira de declararmos vários containers para nossa aplicação e ele é &amp;ldquo;invocado&amp;rdquo; pelo comando docker-compose. Então com isso imaginamos que temos uma aplicação escrita em PHP que utiliza banco de dados MySQL para guardarmos nossos dados.
+Exemplos:
+ temos uma aplicação escrita em PHP temos um banco de dados em MySQL  ou ainda, o tão famoso Wordpress:
+ temos o Wordpress temos o banco de dados do Wordpress  Não importa aqui o exemplo, o que importa é a ideia de termos &amp;ldquo;coisas separadas, vamos simplificar a ideia nisso apenas.</description>
+    </item>
+    
+    <item>
+      <title>Referências</title>
+      <link>https://docker.rafaeldutra.me/beginner/reference/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docker.rafaeldutra.me/beginner/reference/</guid>
+      <description> Docker site oficial Docker imagens e camadas  </description>
+    </item>
+    
+  </channel>
+</rss>

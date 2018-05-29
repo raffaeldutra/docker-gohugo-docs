@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<html lang="ptbr" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.40.3" />
+    <meta name="description" content="Documentação Docker">
+<meta name="author" content="Rafael Dutra">
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link rel="icon" href="/images/favicon.png" type="image/x-icon" />
+    <title>Docker Compose :: Documentação Docker</title>
+    
+    
+    <link href="/css/nucleus.css?1527567012" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1527567012" rel="stylesheet">
+    <link href="/css/hybrid.css?1527567012" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1527567012" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1527567012" rel="stylesheet">
+    <link href="/css/auto-complete.css?1527567012" rel="stylesheet">
+    <link href="/css/theme.css?1527567012" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1527567012" rel="stylesheet">
+    
+      <link href="/css/theme-green.css?1527567012" rel="stylesheet">
+    
+
+    <script src="/js/jquery-2.x.min.js?1527567012"></script>
+    
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{ 
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/beginner/docker-compose/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      
+<img src="https://cdn.icon-icons.com/icons2/338/PNG/128/Containers_35594.png"></img>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fa fa-search"></i></label>
+    <input data-search-input id="search-by" type="text" placeholder="">
+    <span data-search-clear=""><i class="fa fa-close"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1527567012"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1527567012"></script>
+<script type="text/javascript">
+    
+        var baseurl = '\/';
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1527567012"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/beginner/" title="Docker Básico" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/beginner/">
+          Docker Básico
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/beginner/docker/" title="Por que usar Docker ?" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/beginner/docker/">
+          <b>1 </b>Por que usar Docker ?
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/beginner/installing/" title="Instalando" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/beginner/installing/">
+          <b>2 </b>Instalando
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/beginner/installing/way1/" title="A maneira Linux simples de ser" class="dd-item ">
+        <a href="/beginner/installing/way1/">
+        <b>2.1 </b>A maneira Linux simples de ser
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/beginner/installing/way2/" title="Forma tradicional" class="dd-item ">
+        <a href="/beginner/installing/way2/">
+        <b>2.2 </b>Forma tradicional
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/beginner/commands/" title="Rodando containers" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/beginner/commands/">
+          <b>3 </b>Rodando containers
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/beginner/commands/comandos/" title="Comandos" class="dd-item ">
+        <a href="/beginner/commands/comandos/">
+        <b>3.1 </b>Comandos
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/beginner/commands/rodando-container/" title="Rodando um container" class="dd-item ">
+        <a href="/beginner/commands/rodando-container/">
+        <b>3.2 </b>Rodando um container
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/beginner/commands/utilizando-imagens/" title="Utilizando imagens" class="dd-item ">
+        <a href="/beginner/commands/utilizando-imagens/">
+        <b>3.3 </b>Utilizando imagens
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/beginner/commands/gerenciando-containers/" title="Gerenciando os containers" class="dd-item ">
+        <a href="/beginner/commands/gerenciando-containers/">
+        <b>3.4 </b>Gerenciando os containers
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/beginner/commands/manipulando-containers/" title="Manipulando containers" class="dd-item ">
+        <a href="/beginner/commands/manipulando-containers/">
+        <b>3.5 </b>Manipulando containers
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/beginner/commands/limpando-o-que-nao-e-usado/" title="Limpando o que não é usado" class="dd-item ">
+        <a href="/beginner/commands/limpando-o-que-nao-e-usado/">
+        <b>3.6 </b>Limpando o que não é usado
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/beginner/dockerfile/" title="Dockerfile" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/beginner/dockerfile/">
+          <b>4 </b>Dockerfile
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/beginner/dockerfile/dockerfile/" title="Dockerfile" class="dd-item ">
+        <a href="/beginner/dockerfile/dockerfile/">
+        <b>4.1 </b>Dockerfile
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/beginner/dockerfile/creating-image/" title="Criando nossa imagem utilizando o Dockerfile" class="dd-item ">
+        <a href="/beginner/dockerfile/creating-image/">
+        <b>4.2 </b>Criando nossa imagem utilizando o Dockerfile
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/beginner/build/" title="Criando sua imagem com Dockerfile" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/beginner/build/">
+          <b>5 </b>Criando sua imagem com Dockerfile
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/beginner/build/criando-imagens-sem-dockerfile/" title="Criando sua imagem sem Dockerfile" class="dd-item ">
+        <a href="/beginner/build/criando-imagens-sem-dockerfile/">
+        <b>5.1 </b>Criando sua imagem sem Dockerfile
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/beginner/interacting/" title="Interagindo com containers" class="dd-item ">
+        <a href="/beginner/interacting/">
+        <b>6 </b>Interagindo com containers
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/beginner/volumes/" title="Volumes" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/beginner/volumes/">
+          <b>7 </b>Volumes
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/beginner/docker-compose/" title="Docker Compose" class="dd-item active">
+        <a href="/beginner/docker-compose/">
+        <b>8 </b>Docker Compose
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/beginner/reference/" title="Referências" class="dd-item ">
+        <a href="/beginner/reference/">
+        Referências
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/whoami/" title="Quem sou eu?" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/whoami/">
+          Quem sou eu?
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/files/" title="Files" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/files/">
+          Files
+          
+            <i class="fa fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/files/wordpress/docker-compose.yml/" title="Docker Compose" class="dd-item ">
+        <a href="/files/wordpress/docker-compose.yml/">
+        Docker Compose
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/files/nginx/dockerfile/" title="Nginx Dockerfile" class="dd-item ">
+        <a href="/files/nginx/dockerfile/">
+        Nginx Dockerfile
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/files/php/dockerfile/" title="PHP CLI Dockerfile" class="dd-item ">
+        <a href="/files/php/dockerfile/">
+        PHP CLI Dockerfile
+        <i class="fa fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3></h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/raffaeldutra/docker.raffaeldutra.github.io"><i class='fa fa-fw fa-github'></i> Github repo</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://gohugo.io/"><i class='fa fa-fw fa-bookmark'></i> Hugo Documentation</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+       
+      
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fa fa-fw fa-history"></i> </a></li>         
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fa fa-heart"></i></a> from <a href="http://getgrav.org">Grav</a> and <a href="http://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='' href="https://github.com/raffaeldutra/docker.raffaeldutra.github.iobeginner/docker-compose.md" target="blank">
+                      <i class="fa fa-code-fork"></i>
+                      <span id="top-github-link-text"></span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'></a> > <a href='/beginner/'>Docker Básico</a> > Docker Compose
+          
+         
+          
+         
+          
+           
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+
+        
+        <div id="body-inner">
+          
+            <h1>Docker Compose</h1>
+          
+
+        
+
+
+<p>Docker Compose é a maneira de declararmos vários containers para nossa aplicação e ele é &ldquo;invocado&rdquo; pelo comando <strong>docker-compose</strong>. Então com isso imaginamos que temos uma aplicação escrita em PHP que utiliza banco de dados MySQL para guardarmos nossos dados.</p>
+
+<p>Exemplos:</p>
+
+<ol>
+<li>temos uma aplicação escrita em PHP</li>
+<li>temos um banco de dados em MySQL</li>
+</ol>
+
+<p>ou ainda, o tão famoso Wordpress:</p>
+
+<ol>
+<li>temos o Wordpress</li>
+<li>temos o banco de dados do Wordpress</li>
+</ol>
+
+<p>Não importa aqui o exemplo, o que importa é a ideia de termos &ldquo;coisas separadas, vamos simplificar a ideia nisso apenas.</p>
+
+<p>Docker Compose é parecido com o Dockerfile que vimos antes, mas ele é escrito em um formato YAML (YAML Ain&rsquo;t Markup Language) para que possamos declarar nossa aplicação e tudo mais que é utiliza por ela, como volumes, portas, dependência de um outro container, imagem, variáveis de ambiente e etc, ou sejam nada quase diferente do que o Dockerfile neste ponto, porém apenas parece, ele faz muito mais coisa.</p>
+
+<p>Vejamos um exemplo de Docker Compose para termos uma ideia.</p>
+
+<pre><code>1. version: '3.3'
+2.
+3. services:
+4.   db:
+5.     image: mysql:5.7
+6.     volumes:
+7.       - db_data:/var/lib/mysql
+8.     restart: always
+9.     environment:
+10.       MYSQL_ROOT_PASSWORD: somewordpress
+11.       MYSQL_DATABASE: wordpress
+12.       MYSQL_USER: wordpress
+13.       MYSQL_PASSWORD: wordpress
+14.
+15.   wordpress:
+16.     depends_on:
+17.       - db
+18.     image: wordpress:latest
+19.     ports:
+20.       - &quot;8000:80&quot;
+21.     restart: always
+22.     environment:
+23.       WORDPRESS_DB_HOST: db:3306
+24.       WORDPRESS_DB_USER: wordpress
+25.       WORDPRESS_DB_PASSWORD: wordpress
+26. volumes:
+27.    db_data:
+</code></pre>
+
+<p>Isso mesmo, linha por linha eu vou explicar:</p>
+
+<p>Linha 1: versão utilizada do Docker Compose, e isso vai variar conforme a versão que você tem instalada na sua máquina.</p>
+
+<p>Linha 3: estamos dizendo que estamos iniciando um serviço e tudo abaixo dessa linha faz parte deste serviço.</p>
+
+<p>Linha 4: nome que estamos dando para este container, no nosso caso é um simples &ldquo;db&rdquo;, mas poderia ser chamado de banco, database e etc.</p>
+
+<p>Linha 5: imagem utilizada do mysql com sua respectiva versão.</p>
+
+<p>Linha 6 e 7: volume que é utilizado para nosso banco de dados, veja que este valor está ligado diretamente com a definição das linhas 26 e 27.</p>
+
+<p>Linha 8: se algo acontecer com o container, ele por default irá reiniciar sempre.</p>
+
+<p>Linha 9 até linha 13: são variáveis de ambiente que serão utilizadas para acessar o container que roda nosso banco de doados</p>
+
+<p>Linha 15: nome do nosso container, que mais uma vez poderia ser o nome de qualquer coisa.</p>
+
+<p>Linha 16: dizemos que para levantar este container, precisamos do container chamado <strong>db</strong> antes em funcionamento.</p>
+
+<p>Linha 18: imagem utilizada do Wordpress com sua respectiva versão, no caso <strong>latest</strong> significa <em>última</em>.</p>
+
+<p>Linha 19 e 20: definição de portas, ou seja, queremos acessar na porta 8000 da nossa máquina a porta 80 que roda lá dentro do container.</p>
+
+<p>Linha 21: se algo acontecer com o container, ele por default irá reiniciar sempre.</p>
+
+<p>Linha 22 até 25:ão variáveis de ambiente que serão utilizadas para acessar o container que roda nosso Wordpress.</p>
+
+<p>Linha 26 e 27: definição do volume que usamos nas linhas 6 e 7.</p>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+        
+            <a class="nav nav-prev" href="/beginner/volumes/" title="Volumes"> <i class="fa fa-chevron-left"></i></a>
+        
+        
+            <a class="nav nav-next" href="/beginner/reference/" title="Referências" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1527567012"></script>
+    <script src="/js/perfect-scrollbar.min.js?1527567012"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1527567012"></script>
+    <script src="/js/jquery.sticky.js?1527567012"></script>
+    <script src="/js/featherlight.min.js?1527567012"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1527567012"></script>
+    <script src="/js/highlight.pack.js?1527567012"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom.71422.js?1527567012"></script>
+    <script src="/js/learn.js?1527567012"></script>
+    <script src="/js/hugo-learn.js?1527567012"></script>
+
+    <link href="/mermaid/mermaid.css?1527567012" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1527567012"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+
