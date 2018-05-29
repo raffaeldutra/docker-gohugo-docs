@@ -1,6 +1,6 @@
 baseURL = "https://docker.rafaeldutra.me"
 languageCode = "pt-BR"
-defaultContentLanguage = "ptbr"
+defaultContentLanguage = "pt-br"
 
 title = "Documentação Docker"
 theme = "hugo-theme-learn"
