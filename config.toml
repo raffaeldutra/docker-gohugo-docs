@@ -8,7 +8,7 @@ metaDataFormat = "json"
 defaultContentLanguageInSubdir= true
 
 [params]
-  editURL = "https://github.com/raffaeldutra/docker.raffaeldutra.github.io"
+  editURL = "https://github.com/raffaeldutra/docker.raffaeldutra.github.io/tree/develop/content/"
   description = "Documentação Docker"
   author = "Rafael Dutra"
   showVisitedLinks = true
