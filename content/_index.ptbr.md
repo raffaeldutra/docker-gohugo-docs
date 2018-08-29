@@ -13,7 +13,6 @@ Vamos no decorrer da documentação instalar Docker, rodar comandos simples, ent
 - [Instalando](beginner/installing)
   - [Maneira 1](beginner/installing/way1)
   - [Maneira 2](beginner/installing/way2)
-- [O básico](beginner/basics)
 - [Interagindo com containers](beginner/interacting)
 - [Dockerfile](beginner/dockerfile)
 - [Construindo sua imagem](beginner/build)

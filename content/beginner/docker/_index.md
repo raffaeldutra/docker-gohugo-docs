@@ -16,7 +16,7 @@ Uma vez que você consiga rodar o seu container em Docker, você será capaz de 
 
 3. Gerenciamento de ambientes
 
-Usando Docker é muito fácil você ter diferentes tipos de ambientes, como teste, desenvolvimento, qualidade e produção. Você pode versionais toda sua infraestrutura e ter todo o controle do que está entrando em seu ambiente.
+Usando Docker é muito fácil você ter diferentes tipos de ambientes, como teste, desenvolvimento, qualidade e produção. Você pode versionar toda sua infraestrutura e ter todo o controle do que está entrando em seu ambiente.
 
 4. Integração contínua
 
