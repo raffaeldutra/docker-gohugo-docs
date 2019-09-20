@@ -56,7 +56,7 @@ Agora adicione o seu tema para o diretório de themes.
 Construa a imagem que irá rodar com o comando abaixo
 
 ```bash
-docker build -t raffaeldutra/docker-docs .
+docker build -t raffaeldutra/docker-docs:version .
 ```
 
 <a name="como-publicar-site"></a>
@@ -67,7 +67,7 @@ Publicação de código, ou seja, transforma todos os arquivos.md para HTML
 ```bash
 docker run -it \
 -v $(pwd):/src \
--v $(pwd)/public:/src/public raffaeldutra/docker-docs
+-v $(pwd)/public:/src/public raffaeldutra/docker-:version
 ```
 
 <a name="como-rodar-um-servidor"></a>
